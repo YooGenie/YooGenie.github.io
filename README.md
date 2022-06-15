@@ -1,3 +1,4 @@
 # YooGenie.github.io
 
-[테스트](posts/algorithm/2022-06-14.md)
+# 알고리즘
+[재귀함수](posts/algorithm/2022-06-15-RecursionFunction.md)
