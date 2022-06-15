@@ -1,11 +1,11 @@
 ---
-title:  "재귀함수" <br>
+title:  "재귀함수" 
 excerpt: "재귀함수를 이해하고 예시로 공부하자"
 
 toc: true
 toc_sticky: true
 
-date: 2022-06-15 <br>
+date: 2022-06-15
 last_modified_at: 2022-06-15
 ---
 
