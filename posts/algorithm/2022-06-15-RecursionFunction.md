@@ -1,12 +1,8 @@
 ---
 title:  "재귀함수" 
 excerpt: "재귀함수를 이해하고 예시로 공부하자"
-
-toc: true
-toc_sticky: true
-
 date: 2022-06-15
-last_modified_at: 2022-06-16
+last_modified_at: 2022-06-19
 ---
 
 # 재귀함수
@@ -43,9 +39,19 @@ func main() {
 ### 참조 이슈
 https://github.com/YooGenie/algorithm/issues/132
 
-## 최소공배수
+## 최소공배수 예시
+```go
+func LeastCommonMultiple(m int, n int) (result int) {
 
+	result = m * n / GreatestCommonFactor(m, n)
 
+	fmt.Println("최소공배수 : ", result)
+
+	return result
+}
+```
+### 참조 이슈
+https://github.com/YooGenie/algorithm/issues/134
 
 
 
