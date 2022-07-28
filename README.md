@@ -6,7 +6,8 @@
 * [탐욕법](posts/algorithm/2022-06-27-GreedyAlgorithm.md)
 
 # 디자인패턴
-* [싱글톤](post/DesignPattern/2022-07-11-singletonPattern.md)
+* [디자인패턴정의](posts/DesignPattern/2022-06-29-Definition.md)
+* [싱글톤](posts/DesignPattern/2022-07-11-singletonPattern.md)
 
 # 개발일지
 * [enum이 무엇일까?](posts/developmentLog/2022-07-23-enum.md)
