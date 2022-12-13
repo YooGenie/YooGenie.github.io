@@ -20,6 +20,7 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Home">
+<meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"유지니"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Home","name":"괴발개발 성장기","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -246,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 <header class="site-header site-header-transparent" role="banner">
-    <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
+
   <div class="wrapper">
     <div class="site-header-inner">
 <span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
@@ -627,6 +628,106 @@ document.addEventListener('DOMContentLoaded', function(event) {
   <div class="pagination">
   <!-- Post list links -->
   <ul class="post-list">
+<li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/golang/2021/12/23/post-test.html">
+          (Golang) JSON에서 원하는 값만 추출해 오기
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 23, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/golang/2021/12/23/post-test.html">
+        <p>
+        # 배경
+DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+
+# DB 컬럼 값
+
+  content
+    {"name": "유지니", "id": 3954, "totalQuantity": 3, "registrationNo": "990101-2******"}
+    
+  
+
+
+# 코드
+type ContentJson struct {
+   Id 		   int64
+   Content     map[string]interface{}
+}
+
+
+func (contentService) ExtractValue(ctx context.Context, id int64) error {
+	content, err := Do... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags">
+<a class="post-tag" href="/tags.html#golang">#golang</a><a class="post-tag" href="/tags.html#%EA%B3%A0%EC%96%B8%EC%96%B4">#고언어</a><a class="post-tag" href="/tags.html#json">#json</a><a class="post-tag" href="/tags.html#%EA%B0%92%EC%B6%94%EC%B6%9C">#값추출</a><a class="post-tag" href="/tags.html#map">#map</a><a class="post-tag" href="/tags.html#string">#string</a><a class="post-tag" href="/tags.html#%EA%B0%9C%EB%B0%9C%EC%9E%90">#개발자</a><a class="post-tag" href="/tags.html#go%EA%B0%9C%EB%B0%9C%EC%9E%90">#go개발자</a>
+</div>
+    </li>
 <li>
       
 
@@ -1901,10 +2002,16 @@ Here’s a useless table:
   <ul>
     <li>
       <a href="/index.html">
-        All<span>14</span>
+        All<span>15</span>
       </a>
     </li>
 
+    
+      <li>
+        <a href="/categories.html#h-Golang">
+          Golang <span>1</span>
+        </a>
+      </li>
     
       <li>
         <a href="/categories.html#h-example">
