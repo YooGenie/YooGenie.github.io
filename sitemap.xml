@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>YooGenie.github.io/categories/</loc>
+    <loc>https://YooGenie.github.io/categories</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/golang/</loc>
+    <loc>YooGenie.github.io/tags/golang</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/categories/golang/</loc>
+    <loc>YooGenie.github.io/categories/golang</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/post/test/</loc>
+    <loc>YooGenie.github.io/post/test</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</loc>
+    <loc>YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/json/</loc>
+    <loc>YooGenie.github.io/tags/json</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/map/</loc>
+    <loc>YooGenie.github.io/tags/map</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/post/</loc>
+    <loc>YooGenie.github.io/post</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/string/</loc>
+    <loc>YooGenie.github.io/tags/string</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/</loc>
+    <loc>YooGenie.github.io/tags</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/%EA%B0%92%EC%B6%94%EC%B6%9C/</loc>
+    <loc>YooGenie.github.io/tags/%EA%B0%92%EC%B6%94%EC%B6%9C</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</loc>
+    <loc>YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/tags/%EA%B3%A0%EC%96%B8%EC%96%B4/</loc>
+    <loc>YooGenie.github.io/tags/%EA%B3%A0%EC%96%B8%EC%96%B4</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/</loc>
+    <loc>YooGenie.github.io</loc>
     <lastmod>2021-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/archives/</loc>
+    <loc>YooGenie.github.io/archives</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/about/</loc>
+    <loc>YooGenie.github.io/about</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>YooGenie.github.io/archives/</loc>
+    <loc>https://YooGenie.github.io/archives</loc>
   </url><url>
-    <loc>YooGenie.github.io/contact/</loc>
+    <loc>https://YooGenie.github.io/contact</loc>
   </url>
 </urlset>
