@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 괴발개발 성장기</title>
+    <title>Categories on 괴발개발 성장기🐾</title>
     <link>https://YooGenie.github.io/categories/</link>
-    <description>Recent content in Categories on 괴발개발 성장기</description>
+    <description>Recent content in Categories on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -58,6 +58,24 @@
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/categories/%EA%B3%A0%EC%96%B8%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>백엔드</title>
+      <link>https://YooGenie.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/categories/%EB%B0%B1%EC%97%94%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>회고</title>
+      <link>https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
     

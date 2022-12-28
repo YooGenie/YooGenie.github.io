@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>회사일지 on 괴발개발 성장기</title>
+    <title>회사일지 on 괴발개발 성장기🐾</title>
     <link>https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%9D%BC%EC%A7%80/</link>
-    <description>Recent content in 회사일지 on 괴발개발 성장기</description>
+    <description>Recent content in 회사일지 on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%9D%BC%EC%A7%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/kkkkddddd/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/kkkkddddd/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/tes5/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/tes5/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
     <item>
       <title>Golang JSON에서 원하는 값만 추출해 오기</title>
       <link>https://YooGenie.github.io/post/test2/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/post/test2/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/test3/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/test3/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/test4/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/test4/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/testddddd2/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/testddddd2/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
+      <link>https://YooGenie.github.io/post/testddddddd2/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/testddddddd2/</guid>
+      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
+# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
+    </item>
+    
+    <item>
+      <title>제목이 길면 어떻게 하지????? 테스트 중 테스트중 테스트중 테스트중 테스트 중 테스트중 테스트중 테스트중</title>
+      <link>https://YooGenie.github.io/post/kkkk/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/kkkk/</guid>
       <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
 # DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
     </item>
