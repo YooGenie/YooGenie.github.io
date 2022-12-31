@@ -8,21 +8,21 @@
     <language>ko</language>
     <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>1년차 개발자 회고</title>
+      <link>https://YooGenie.github.io/post/2021-12-27/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/2021-12-27/</guid>
+      <description>벌써 입사한지 1년이 되었다. 일년을 뒤돌아보는 시간을 가졌다. (팀이 생긴지 1년 4개월, 프리랜서 개발자와 신입개발자로 돌아가는 팀이다)
+# 입사하자마자 고비 처음 팀으로 왔을 때 사수는 우리에게 Clone을 하라고 했다. 나는 무슨 말인지 이해를 못 했고 git이 무엇인지 몰랐다. 옆에 앉은 동기는 git를 아는 것 같았다. 도움을 받을 수 있다는 생각에 다행이라는 생각했다. 우리 팀은 git, go, react를 사용한다고 했는데 나는 그날 세 단어를 처음 들어봤다. 진짜 나는 아무것도 몰랐는데 어떻게 취업이 되었는지 미스터리다.</description>
+    </item>
+    
+    <item>
       <title>Golang JSON에서 원하는 값만 추출해 오기</title>
       <link>https://YooGenie.github.io/post/test/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/post/test/</guid>
-      <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
-# DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
-    </item>
-    
-    <item>
-      <title>Golang JSON에서 원하는 값만 추출해 오기</title>
-      <link>https://YooGenie.github.io/post/test2/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/post/test2/</guid>
       <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
 # DB 컬럼 값 content {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} # 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{ Id: id, } _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다.</description>
     </item>
