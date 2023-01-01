@@ -6,13 +6,67 @@
     <description>Recent content in Tags on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1년차 회고</title>
       <link>https://YooGenie.github.io/tags/1%EB%85%84%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/1%EB%85%84%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go개발자</title>
+      <link>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>map</title>
+      <link>https://YooGenie.github.io/tags/map/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발자</title>
+      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발자회고</title>
+      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>백엔드개발자</title>
+      <link>https://YooGenie.github.io/tags/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>회고</title>
+      <link>https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -26,29 +80,11 @@
     </item>
     
     <item>
-      <title>go개발자</title>
-      <link>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>json</title>
       <link>https://YooGenie.github.io/tags/json/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/json/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>map</title>
-      <link>https://YooGenie.github.io/tags/map/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/map/</guid>
       <description></description>
     </item>
     
@@ -71,47 +107,11 @@
     </item>
     
     <item>
-      <title>개발자</title>
-      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>개발자회고</title>
-      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>고언어</title>
       <link>https://YooGenie.github.io/tags/%EA%B3%A0%EC%96%B8%EC%96%B4/</link>
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/%EA%B3%A0%EC%96%B8%EC%96%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>백엔드개발자</title>
-      <link>https://YooGenie.github.io/tags/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>회고</title>
-      <link>https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
     
