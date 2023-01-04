@@ -17,38 +17,11 @@
     </item>
     
     <item>
-      <title>go</title>
-      <link>https://YooGenie.github.io/tags/go/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://YooGenie.github.io/tags/golang/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>go개발자</title>
       <link>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go구조체</title>
-      <link>https://YooGenie.github.io/tags/go%EA%B5%AC%EC%A1%B0%EC%B2%B4/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/go%EA%B5%AC%EC%A1%B0%EC%B2%B4/</guid>
       <description></description>
     </item>
     
@@ -80,24 +53,6 @@
     </item>
     
     <item>
-      <title>구조체</title>
-      <link>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>구조체임베딩</title>
-      <link>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>백엔드개발자</title>
       <link>https://YooGenie.github.io/tags/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
@@ -112,6 +67,15 @@
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://YooGenie.github.io/tags/golang/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -148,6 +112,60 @@
       <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/%EA%B3%A0%EC%96%B8%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DTO</title>
+      <link>https://YooGenie.github.io/tags/dto/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/dto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://YooGenie.github.io/tags/go/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go구조체</title>
+      <link>https://YooGenie.github.io/tags/go%EA%B5%AC%EC%A1%B0%EC%B2%B4/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/go%EA%B5%AC%EC%A1%B0%EC%B2%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jsonb</title>
+      <link>https://YooGenie.github.io/tags/jsonb/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/jsonb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>구조체</title>
+      <link>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>구조체임베딩</title>
+      <link>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/</link>
+      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/</guid>
       <description></description>
     </item>
     

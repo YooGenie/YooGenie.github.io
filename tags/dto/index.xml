@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>go on 괴발개발 성장기🐾</title>
-    <link>https://YooGenie.github.io/tags/go/</link>
-    <description>Recent content in go on 괴발개발 성장기🐾</description>
+    <title>DTO on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/dto/</link>
+    <description>Recent content in DTO on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/dto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[golang] DB안에 JSON 객체를 넣는 방법(jsonb 사용)</title>
       <link>https://YooGenie.github.io/post/2021-06-22/</link>
@@ -16,16 +16,6 @@
       <description># 배경 캠페인마다 약관을 넣어야 했다. 약관내용을 json 값으로 DB에 넣어야 한다고 했다. 시니어 개발자분의 힌트는 jsonb를 이용하라고 했다.
 #방법 DB 컬럼하나에 JSON을 넣고 싶었다. 이럴 때에는 jsonb을 사용한다 xorm:&amp;ldquo;a jsonb&amp;rdquo; 이렇게 설정하면 된다
 json 예시 &amp;#34;a&amp;#34;: { &amp;#34;aOne&amp;#34;: &amp;#34;a객체안에 하나&amp;#34;, &amp;#34;b&amp;#34;: { &amp;#34;bOne&amp;#34;: &amp;#34;a객체안에 b 객체안에 하나&amp;#34;, &amp;#34;bTwoArray&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;홍길동&amp;#34;, &amp;#34;content&amp;#34; : &amp;#34;객체안에 객체안에 배열&amp;#34; } ] }, &amp;#34;aThreeArray&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;content&amp;#34;: &amp;#34;객체안에 배열&amp;#34; }, { &amp;#34;id&amp;#34;:2, &amp;#34;content&amp;#34;: &amp;#34;객체안에 배열 2개&amp;#34; } ] } # DTO에서 구조체 type ACreate struct { A *A `json:&amp;#34;a&amp;#34; ` } type A struct { AOne string `json:&amp;#34;aOne&amp;#34; validate:&amp;#34;required&amp;#34; ` B B `json:&amp;#34;b&amp;#34; ` AThreeArray []AThreeArray `json:&amp;#34;aThreeArray&amp;#34;` } type B struct { BOne string `json:&amp;#34;bOne&amp;#34;` BTwoArray []BTwoArray `json:&amp;#34;bTwoArray&amp;#34;` } type BTwoArray struct { CompanyName string `json:&amp;#34;companyName&amp;#34;` Content string `json:&amp;#34;content&amp;#34;` } type AThreeArray struct { Id string `json:&amp;#34;id&amp;#34; ` Content string `json:&amp;#34;content&amp;#34;` } </description>
-    </item>
-    
-    <item>
-      <title>[golang] 구조체</title>
-      <link>https://YooGenie.github.io/post/2021-06-14/</link>
-      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/post/2021-06-14/</guid>
-      <description>내부 필드 접근 : 구조체에 다른 구조체를 내부 필드로 지정하면 내부 구조체의 필드에 접근 할 수 있다.
-type Info struct { id int name string addressInfo Address } type Address struct { postNum string address string addressDetail string } 구조체 값을 출력할 때 필드명과 값을 함께 출력하려면 %#v 를 사용한다 fmt.Printf(&amp;#34;%#v&amp;#34;,V) 구조체 임베딩 Go에는 상속이 없다. 그래서 사용자 정의 타입을 조합하여 구조체로 정의하여 객체를 재사용한다. 사용자 정의 타입을 구조체의 필드로 지정하는 것을 임베딩이라고 한다.</description>
     </item>
     
   </channel>
