@@ -9,6 +9,18 @@
     <lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
+      <link>https://YooGenie.github.io/post/2021-12-08/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/2021-12-08/</guid>
+      <description>엄청난 뻘짓을 했다. 정보를 찾아 찾아 코드를 짰는데&amp;hellip; wkhtmltopdf not found 에러가 계속 났다. exe 파일 필요한 것 같은데&amp;hellip; 모듈 말고 다른걸 설치해야한다는 생각을 못했다.
+#방법 https://wkhtmltopdf.org/downloads.html 에 가서 OS에 따라 다운 받기 참조 여기에서는 맥이 다운 받아지지 않았다 brew install Caskroom/cask/wkhtmltopdf 이걸로 다운을 받았다.
+terminal에 모듈 설치 go get -u github.com/SebastiaanKlippert/go-wkhtmltopdf 환경변수 설정 이름: WKHTMLTOPDF_PATH 값: C:\Program Files\wkhtmltopdf\bin (설치된 장소)
+코드를 작성한다. 나는 처음에 API 호출할 때마다 변환하는 걸로 하려고 했는데 샘플 자료는 메인에 만들었다.</description>
+    </item>
+    
+    <item>
+      <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
       <link>https://YooGenie.github.io/post/2022-12-08/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
