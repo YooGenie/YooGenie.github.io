@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encryptkey on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/encryptkey/</link>
+    <description>Recent content in Encryptkey on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/encryptkey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[golang] 핸드폰번호 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다</title>
+      <link>https://YooGenie.github.io/post/20211217/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/20211217/</guid>
+      <description>func SetEncrypt(text string) string { key := config.Config.Encrypt.EncryptKey return Encrypt(key, text) } # 이슈 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다.
+# 해결책 config.json에 Encryptkey가 없어서 에러가 난다고 생각했는데 컴퓨터 환경 변수에 STUDY_GENIE_ENCRYPT_KEY를 넣어준 후에 환경변수를 설정하는 코드에서
+Config.Encrypt.EncryptKey = properties[&amp;#34;STUDY_GENIE_ENCRYPT_KEY&amp;#34;] 이렇게 설정을 해줬다. config.json에 설정을 하지 않은 이유는 보안상의 문제이다. 우리팀은 elastic beanstalk에서 설정을 해준다고 한다. (데브옵스를 공부해야할 이유가 점점 생기고 있다)
+​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -226,10 +226,10 @@
             
           </div>
           
-          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/2021-12-27/">
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/20211217/">
             <div
               class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
-              1년차 개발자 회고 <span class="icon-keyboard_arrow_right"></span>
+              [golang] 핸드폰번호 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다 <span class="icon-keyboard_arrow_right"></span>
             </div>
           </a>
           
@@ -268,6 +268,9 @@
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
@@ -298,10 +301,30 @@
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
                 # 1년차회고
             </span></a>
+        <a href='/tags/bool'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # bool
+            </span></a>
+        <a href='/tags/db'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # db
+            </span></a>
         <a href='/tags/dto'>
             <span
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
                 # dto
+            </span></a>
+        <a href='/tags/encryptkey'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # encryptkey
+            </span></a>
+        <a href='/tags/error'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # error
             </span></a>
         <a href='/tags/go'>
             <span
@@ -323,26 +346,6 @@
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
                 # go구조체
             </span></a>
-        <a href='/tags/go%EC%96%B8%EC%96%B4'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # go언어
-            </span></a>
-        <a href='/tags/html'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # html
-            </span></a>
-        <a href='/tags/htmltopdf'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # htmltopdf
-            </span></a>
-        <a href='/tags/json'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # json
-            </span></a>
     </div>
 </div>
 
@@ -354,6 +357,17 @@
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
+        <a href="/post/20230106/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/01/06</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/2021-12-27/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -365,6 +379,28 @@
                 </div>
             </div>
         </a>
+        <a href="/post/20211230/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Error] panic: Record map key is not string 해결방안</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2021/12/17</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/20211217/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] 핸드폰번호 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2021/12/17</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/2021-12-13/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -372,39 +408,6 @@
                     <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] JSON에서 원하는 값만 추출해 오기</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2021/12/13</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/2021-12-08/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2021/12/08</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/2022-12-08/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2021/12/08</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/20230106/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2021/12/08</time>
                     </p>
                 </div>
             </div>

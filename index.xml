@@ -6,7 +6,18 @@
     <description>Recent content on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
+      <link>https://YooGenie.github.io/post/20230106/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/20230106/</guid>
+      <description>공지!!! 현재 블로그 글 옮기는 중 목표는 설날 전에 끝내기!
+나의 티스토리 블로그
+쉽게 이미지를 옮기는 방법 찾기 ​ ​ ​</description>
+    </item>
+    
     <item>
       <title>1년차 개발자 회고</title>
       <link>https://YooGenie.github.io/post/2021-12-27/</link>
@@ -15,6 +26,30 @@
       <guid>https://YooGenie.github.io/post/2021-12-27/</guid>
       <description>벌써 입사한지 1년이 되었다. 일년을 뒤돌아보는 시간을 가졌다. (팀이 생긴지 1년 4개월, 프리랜서 개발자와 신입개발자로 돌아가는 팀이다)
 # 입사하자마자 고비 처음 팀으로 왔을 때 사수는 우리에게 Clone을 하라고 했다. 나는 무슨 말인지 이해를 못 했고 git이 무엇인지 몰랐다. 옆에 앉은 동기는 git를 아는 것 같았다. 도움을 받을 수 있다는 생각에 다행이라는 생각했다. 우리 팀은 git, go, react를 사용한다고 했는데 나는 그날 세 단어를 처음 들어봤다. 진짜 나는 아무것도 몰랐는데 어떻게 취업이 되었는지 미스터리다.</description>
+    </item>
+    
+    <item>
+      <title>[Error] panic: Record map key is not string 해결방안</title>
+      <link>https://YooGenie.github.io/post/20211230/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/20211230/</guid>
+      <description># 오류메시지 panic: Record map key is not string
+문자열이 아니라고 해서 디버깅을 했다. DB안에 있는 no: 2가 false-&amp;gt;2 이렇게 들어간다. 그래서 string이 아니라는 메시지가 계속 나왔다 그래서 test DB에서 no: 2 삭제 했더니 코드가 정상으로 돌아갔다.
+이미지 넣기
+# 수정 전 - no: 2 id: password: business_registration_number: mobile: created: null updated: null deleted_at: null # 수정 후 - id: password: business_registration_number: created: null updated: null deleted_at: null ** ★YAML이 bool를 yes, no으로 읽는다.</description>
+    </item>
+    
+    <item>
+      <title>[golang] 핸드폰번호 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다</title>
+      <link>https://YooGenie.github.io/post/20211217/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/20211217/</guid>
+      <description>func SetEncrypt(text string) string { key := config.Config.Encrypt.EncryptKey return Encrypt(key, text) } # 이슈 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다.
+# 해결책 config.json에 Encryptkey가 없어서 에러가 난다고 생각했는데 컴퓨터 환경 변수에 STUDY_GENIE_ENCRYPT_KEY를 넣어준 후에 환경변수를 설정하는 코드에서
+Config.Encrypt.EncryptKey = properties[&amp;#34;STUDY_GENIE_ENCRYPT_KEY&amp;#34;] 이렇게 설정을 해줬다. config.json에 설정을 하지 않은 이유는 보안상의 문제이다. 우리팀은 elastic beanstalk에서 설정을 해준다고 한다. (데브옵스를 공부해야할 이유가 점점 생기고 있다)
+​ ​ ​</description>
     </item>
     
     <item>
@@ -53,14 +88,13 @@ terminal에 모듈 설치 go get -u github.com/SebastiaanKlippert/go-wkhtmltopdf
     </item>
     
     <item>
-      <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
-      <link>https://YooGenie.github.io/post/20230106/</link>
-      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      <title>[golang] XORM에서 like문 사용할 때 % 처리하는 방법</title>
+      <link>https://YooGenie.github.io/post/20210817/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20230106/</guid>
-      <description>공지!!! 현재 블로그 글 옮기는 중 목표는 설날 전에 끝내기!
-나의 티스토리 블로그
-​ ​ ​</description>
+      <guid>https://YooGenie.github.io/post/20210817/</guid>
+      <description># 배경 일 할때마다 두레이에 적어놓은 내용이다. XORM에서 like 문을 어떻게 써야할지 고민할 때가 있었다. 작은 따움표와 큰 따움표를 잘 이용해야한다는 것을 배웠다.
+# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 이미지</description>
     </item>
     
     <item>

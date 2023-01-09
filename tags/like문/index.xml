@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>like문 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/like%EB%AC%B8/</link>
+    <description>Recent content in like문 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/like%EB%AC%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[golang] XORM에서 like문 사용할 때 % 처리하는 방법</title>
+      <link>https://YooGenie.github.io/post/20210817/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/20210817/</guid>
+      <description># 배경 일 할때마다 두레이에 적어놓은 내용이다. XORM에서 like 문을 어떻게 써야할지 고민할 때가 있었다. 작은 따움표와 큰 따움표를 잘 이용해야한다는 것을 배웠다.
+# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 이미지</description>
+    </item>
+    
+  </channel>
+</rss>
