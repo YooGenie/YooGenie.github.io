@@ -9,14 +9,12 @@
     <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/error/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Error] panic: Record map key is not string 해결방안</title>
-      <link>https://YooGenie.github.io/post/20211230/</link>
+      <link>https://YooGenie.github.io/post/golang/20211230/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20211230/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20211230/</guid>
       <description># 오류메시지 panic: Record map key is not string
-문자열이 아니라고 해서 디버깅을 했다. DB안에 있는 no: 2가 false-&amp;gt;2 이렇게 들어간다. 그래서 string이 아니라는 메시지가 계속 나왔다 그래서 test DB에서 no: 2 삭제 했더니 코드가 정상으로 돌아갔다.
-이미지 넣기
-# 수정 전 - no: 2 id: password: business_registration_number: mobile: created: null updated: null deleted_at: null # 수정 후 - id: password: business_registration_number: created: null updated: null deleted_at: null ** ★YAML이 bool를 yes, no으로 읽는다.</description>
+문자열이 아니라고 해서 디버깅을 했다. DB안에 있는 no: 2가 false-&amp;gt;2 이렇게 들어간다. 그래서 string이 아니라는 메시지가 계속 나왔다 그래서 test DB에서 no: 2 삭제 했더니 코드가 정상으로 돌아갔다. # 수정 전 - no: 2 id: password: business_registration_number: mobile: created: null updated: null deleted_at: null # 수정 후 - id: password: business_registration_number: created: null updated: null deleted_at: null ★YAML이 bool를 yes, no으로 읽는다.</description>
     </item>
     
   </channel>

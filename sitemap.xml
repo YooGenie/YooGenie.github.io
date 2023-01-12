@@ -5,9 +5,6 @@
     <loc>https://YooGenie.github.io/</loc>
     <lastmod>2022-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/20230106/</loc>
-    <lastmod>2022-01-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://YooGenie.github.io/categories/</loc>
     <lastmod>2022-01-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,7 +20,10 @@
     <loc>https://YooGenie.github.io/categories/%EA%B3%B5%EC%A7%80/</loc>
     <lastmod>2022-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/2021-12-27/</loc>
+    <loc>https://YooGenie.github.io/post/20230106/</loc>
+    <lastmod>2022-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/post/20211227/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/1%EB%85%84%EC%B0%A8%ED%9A%8C%EA%B3%A0/</loc>
@@ -50,16 +50,37 @@
     <loc>https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/20211230/</loc>
+    <loc>https://YooGenie.github.io/post/mysql/20211222/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/db/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/json/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/json_extract/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/categories/mysql/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/mysql/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/sql/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95%EA%B0%92-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2021-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://YooGenie.github.io/post/golang/20211230/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/20211217/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20211217/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/bool/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://YooGenie.github.io/tags/db/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/encryptkey/</loc>
@@ -101,7 +122,7 @@
     <loc>https://YooGenie.github.io/tags/%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/2021-12-13/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20211213/</loc>
     <lastmod>2021-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/json%EA%B0%92%EC%B6%94%EC%B6%9C/</loc>
@@ -110,10 +131,7 @@
     <loc>https://YooGenie.github.io/tags/string/</loc>
     <lastmod>2021-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/2021-12-08/</loc>
-    <lastmod>2021-12-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://YooGenie.github.io/post/2022-12-08/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20211208/</loc>
     <lastmod>2021-12-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/html/</loc>
@@ -128,7 +146,7 @@
     <loc>https://YooGenie.github.io/tags/wkhtmltopdf/</loc>
     <lastmod>2021-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/20210817/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20210817/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/like/</loc>
@@ -137,13 +155,10 @@
     <loc>https://YooGenie.github.io/tags/like%EB%AC%B8/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/tags/sql/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://YooGenie.github.io/tags/xorm/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/2021-06-22/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20210622/</loc>
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/dto/</loc>
@@ -152,16 +167,13 @@
     <loc>https://YooGenie.github.io/tags/go%EA%B5%AC%EC%A1%B0%EC%B2%B4/</loc>
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/tags/json/</loc>
-    <lastmod>2021-06-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://YooGenie.github.io/tags/jsonb/</loc>
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4/</loc>
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://YooGenie.github.io/post/2021-06-14/</loc>
+    <loc>https://YooGenie.github.io/post/golang/20210614/</loc>
     <lastmod>2021-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/</loc>

@@ -6,15 +6,28 @@
     <description>Recent content in SQL on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Mysql] json 컬럼안에 있는 특정 값 찾는 방법</title>
+      <link>https://YooGenie.github.io/post/mysql/20211222/</link>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20211222/</guid>
+      <description># 목적 json으로 된 컬럼에서 datetime만 뽑아오기
+# 컬럼명 created
+# json 구조 { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;datetime&amp;#34;: &amp;#34;2021-03-02 10:07:08&amp;#34; } # SQL select JSON_EXTRACT(created,&amp;#39;$.datetime&amp;#39;) 시간 from donations ; JSON_EXTRACT함수를 이용해서 컬럼명과 JSON안에 있는 키를 적으면 끝!
+결과 &amp;ldquo;2021-03-02 10:07:08&amp;rdquo;
+​ ​ ​</description>
+    </item>
+    
     <item>
       <title>[golang] XORM에서 like문 사용할 때 % 처리하는 방법</title>
-      <link>https://YooGenie.github.io/post/20210817/</link>
+      <link>https://YooGenie.github.io/post/golang/20210817/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20210817/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20210817/</guid>
       <description># 배경 일 할때마다 두레이에 적어놓은 내용이다. XORM에서 like 문을 어떻게 써야할지 고민할 때가 있었다. 작은 따움표와 큰 따움표를 잘 이용해야한다는 것을 배웠다.
-# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 이미지</description>
+# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 !(xorm)[https://user-images.githubusercontent.com/92665524/211431618-2ee52d89-9207-4682-85fd-d79d85b2b7eb.png]</description>
     </item>
     
   </channel>

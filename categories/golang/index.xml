@@ -9,22 +9,20 @@
     <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Error] panic: Record map key is not string 해결방안</title>
-      <link>https://YooGenie.github.io/post/20211230/</link>
+      <link>https://YooGenie.github.io/post/golang/20211230/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20211230/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20211230/</guid>
       <description># 오류메시지 panic: Record map key is not string
-문자열이 아니라고 해서 디버깅을 했다. DB안에 있는 no: 2가 false-&amp;gt;2 이렇게 들어간다. 그래서 string이 아니라는 메시지가 계속 나왔다 그래서 test DB에서 no: 2 삭제 했더니 코드가 정상으로 돌아갔다.
-이미지 넣기
-# 수정 전 - no: 2 id: password: business_registration_number: mobile: created: null updated: null deleted_at: null # 수정 후 - id: password: business_registration_number: created: null updated: null deleted_at: null ** ★YAML이 bool를 yes, no으로 읽는다.</description>
+문자열이 아니라고 해서 디버깅을 했다. DB안에 있는 no: 2가 false-&amp;gt;2 이렇게 들어간다. 그래서 string이 아니라는 메시지가 계속 나왔다 그래서 test DB에서 no: 2 삭제 했더니 코드가 정상으로 돌아갔다. # 수정 전 - no: 2 id: password: business_registration_number: mobile: created: null updated: null deleted_at: null # 수정 후 - id: password: business_registration_number: created: null updated: null deleted_at: null ★YAML이 bool를 yes, no으로 읽는다.</description>
     </item>
     
     <item>
       <title>[golang] 핸드폰번호 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다</title>
-      <link>https://YooGenie.github.io/post/20211217/</link>
+      <link>https://YooGenie.github.io/post/golang/20211217/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20211217/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20211217/</guid>
       <description>func SetEncrypt(text string) string { key := config.Config.Encrypt.EncryptKey return Encrypt(key, text) } # 이슈 암호화하는 과정에서 key 값이 0이 나와서 에러가 발생한다.
 # 해결책 config.json에 Encryptkey가 없어서 에러가 난다고 생각했는데 컴퓨터 환경 변수에 STUDY_GENIE_ENCRYPT_KEY를 넣어준 후에 환경변수를 설정하는 코드에서
 Config.Encrypt.EncryptKey = properties[&amp;#34;STUDY_GENIE_ENCRYPT_KEY&amp;#34;] 이렇게 설정을 해줬다. config.json에 설정을 하지 않은 이유는 보안상의 문제이다. 우리팀은 elastic beanstalk에서 설정을 해준다고 한다. (데브옵스를 공부해야할 이유가 점점 생기고 있다)
@@ -33,10 +31,10 @@ Config.Encrypt.EncryptKey = properties[&amp;#34;STUDY_GENIE_ENCRYPT_KEY&amp;#34;
     
     <item>
       <title>[golang] JSON에서 원하는 값만 추출해 오기</title>
-      <link>https://YooGenie.github.io/post/2021-12-13/</link>
+      <link>https://YooGenie.github.io/post/golang/20211213/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/2021-12-13/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20211213/</guid>
       <description># 배경 DB에서 Json으로 되어 있는 컬럼에서 원하는 값 추출하고 싶었다.
 # DB 컬럼 값 content
 {&amp;#34;name&amp;#34;: &amp;#34;유지니&amp;#34;, &amp;#34;id&amp;#34;: 3954, &amp;#34;totalQuantity&amp;#34;: 3, &amp;#34;registrationNo&amp;#34;: &amp;#34;990101-2******&amp;#34;} 코드 type ContentJson struct { Id int64 Content map[string]interface{} } func (contentService) ExtractValue(ctx context.Context, id int64) error { content, err := DonationDocuService().GetIssuedDonationReceipt(ctx, id) //원하는 값을 가져왔다. if err != nil { return err } m := entity.ContentJson{Id: id} _ = json.Unmarshal(content.Content, &amp;amp;m.Content) //바이트를 JSon으로 바꿔준다. dateOfBirth = m.</description>
@@ -44,22 +42,10 @@ Config.Encrypt.EncryptKey = properties[&amp;#34;STUDY_GENIE_ENCRYPT_KEY&amp;#34;
     
     <item>
       <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
-      <link>https://YooGenie.github.io/post/2021-12-08/</link>
+      <link>https://YooGenie.github.io/post/golang/20211208/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/2021-12-08/</guid>
-      <description>엄청난 뻘짓을 했다. 정보를 찾아 찾아 코드를 짰는데&amp;hellip; wkhtmltopdf not found 에러가 계속 났다. exe 파일 필요한 것 같은데&amp;hellip; 모듈 말고 다른걸 설치해야한다는 생각을 못했다.
-#방법 https://wkhtmltopdf.org/downloads.html 에 가서 OS에 따라 다운 받기 참조 여기에서는 맥이 다운 받아지지 않았다 brew install Caskroom/cask/wkhtmltopdf 이걸로 다운을 받았다.
-terminal에 모듈 설치 go get -u github.com/SebastiaanKlippert/go-wkhtmltopdf 환경변수 설정 이름: WKHTMLTOPDF_PATH 값: C:\Program Files\wkhtmltopdf\bin (설치된 장소)
-코드를 작성한다. 나는 처음에 API 호출할 때마다 변환하는 걸로 하려고 했는데 샘플 자료는 메인에 만들었다.</description>
-    </item>
-    
-    <item>
-      <title>[golang] Html 파일을 PDF로 변환 (go-wkhtmltopdf 사용)</title>
-      <link>https://YooGenie.github.io/post/2022-12-08/</link>
-      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/post/2022-12-08/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20211208/</guid>
       <description>엄청난 뻘짓을 했다. 정보를 찾아 찾아 코드를 짰는데&amp;hellip; wkhtmltopdf not found 에러가 계속 났다. exe 파일 필요한 것 같은데&amp;hellip; 모듈 말고 다른걸 설치해야한다는 생각을 못했다.
 #방법 https://wkhtmltopdf.org/downloads.html 에 가서 OS에 따라 다운 받기 참조 여기에서는 맥이 다운 받아지지 않았다 brew install Caskroom/cask/wkhtmltopdf 이걸로 다운을 받았다.
 terminal에 모듈 설치 go get -u github.com/SebastiaanKlippert/go-wkhtmltopdf 환경변수 설정 이름: WKHTMLTOPDF_PATH 값: C:\Program Files\wkhtmltopdf\bin (설치된 장소)
@@ -68,20 +54,20 @@ terminal에 모듈 설치 go get -u github.com/SebastiaanKlippert/go-wkhtmltopdf
     
     <item>
       <title>[golang] XORM에서 like문 사용할 때 % 처리하는 방법</title>
-      <link>https://YooGenie.github.io/post/20210817/</link>
+      <link>https://YooGenie.github.io/post/golang/20210817/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/20210817/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20210817/</guid>
       <description># 배경 일 할때마다 두레이에 적어놓은 내용이다. XORM에서 like 문을 어떻게 써야할지 고민할 때가 있었다. 작은 따움표와 큰 따움표를 잘 이용해야한다는 것을 배웠다.
-# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 이미지</description>
+# SQL문 select * from member where name like &amp;#39;%유%&amp;#39;; # XORM q.where(&amp;#34;name like &amp;#39;%&amp;#34; + Name + &amp;#34;%&amp;#39;&amp;#34;) # 예시 !(xorm)[https://user-images.githubusercontent.com/92665524/211431618-2ee52d89-9207-4682-85fd-d79d85b2b7eb.png]</description>
     </item>
     
     <item>
       <title>[golang] DB안에 JSON 객체를 넣는 방법(jsonb 사용)</title>
-      <link>https://YooGenie.github.io/post/2021-06-22/</link>
+      <link>https://YooGenie.github.io/post/golang/20210622/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/2021-06-22/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20210622/</guid>
       <description># 배경 캠페인마다 약관을 넣어야 했다. 약관내용을 json 값으로 DB에 넣어야 한다고 했다. 시니어 개발자분의 힌트는 jsonb를 이용하라고 했다.
 #방법 DB 컬럼하나에 JSON을 넣고 싶었다. 이럴 때에는 jsonb을 사용한다 xorm:&amp;ldquo;a jsonb&amp;rdquo; 이렇게 설정하면 된다
 json 예시 &amp;#34;a&amp;#34;: { &amp;#34;aOne&amp;#34;: &amp;#34;a객체안에 하나&amp;#34;, &amp;#34;b&amp;#34;: { &amp;#34;bOne&amp;#34;: &amp;#34;a객체안에 b 객체안에 하나&amp;#34;, &amp;#34;bTwoArray&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;홍길동&amp;#34;, &amp;#34;content&amp;#34; : &amp;#34;객체안에 객체안에 배열&amp;#34; } ] }, &amp;#34;aThreeArray&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;content&amp;#34;: &amp;#34;객체안에 배열&amp;#34; }, { &amp;#34;id&amp;#34;:2, &amp;#34;content&amp;#34;: &amp;#34;객체안에 배열 2개&amp;#34; } ] } # DTO에서 구조체 type ACreate struct { A *A `json:&amp;#34;a&amp;#34; ` } type A struct { AOne string `json:&amp;#34;aOne&amp;#34; validate:&amp;#34;required&amp;#34; ` B B `json:&amp;#34;b&amp;#34; ` AThreeArray []AThreeArray `json:&amp;#34;aThreeArray&amp;#34;` } type B struct { BOne string `json:&amp;#34;bOne&amp;#34;` BTwoArray []BTwoArray `json:&amp;#34;bTwoArray&amp;#34;` } type BTwoArray struct { CompanyName string `json:&amp;#34;companyName&amp;#34;` Content string `json:&amp;#34;content&amp;#34;` } type AThreeArray struct { Id string `json:&amp;#34;id&amp;#34; ` Content string `json:&amp;#34;content&amp;#34;` } ​ ​ ​</description>
@@ -89,10 +75,10 @@ json 예시 &amp;#34;a&amp;#34;: { &amp;#34;aOne&amp;#34;: &amp;#34;a객체안�
     
     <item>
       <title>[golang] 구조체</title>
-      <link>https://YooGenie.github.io/post/2021-06-14/</link>
+      <link>https://YooGenie.github.io/post/golang/20210614/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/2021-06-14/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20210614/</guid>
       <description>내부 필드 접근 : 구조체에 다른 구조체를 내부 필드로 지정하면 내부 구조체의 필드에 접근 할 수 있다.
 type Info struct { id int name string addressInfo Address } type Address struct { postNum string address string addressDetail string } 구조체 값을 출력할 때 필드명과 값을 함께 출력하려면 %#v 를 사용한다 fmt.Printf(&amp;#34;%#v&amp;#34;,V) 구조체 임베딩 Go에는 상속이 없다. 그래서 사용자 정의 타입을 조합하여 구조체로 정의하여 객체를 재사용한다. 사용자 정의 타입을 구조체의 필드로 지정하는 것을 임베딩이라고 한다.</description>
     </item>

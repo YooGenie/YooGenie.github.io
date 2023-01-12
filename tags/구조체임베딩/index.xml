@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%9E%84%EB%B2%A0%EB%94%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[golang] 구조체</title>
-      <link>https://YooGenie.github.io/post/2021-06-14/</link>
+      <link>https://YooGenie.github.io/post/golang/20210614/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://YooGenie.github.io/post/2021-06-14/</guid>
+      <guid>https://YooGenie.github.io/post/golang/20210614/</guid>
       <description>내부 필드 접근 : 구조체에 다른 구조체를 내부 필드로 지정하면 내부 구조체의 필드에 접근 할 수 있다.
 type Info struct { id int name string addressInfo Address } type Address struct { postNum string address string addressDetail string } 구조체 값을 출력할 때 필드명과 값을 함께 출력하려면 %#v 를 사용한다 fmt.Printf(&amp;#34;%#v&amp;#34;,V) 구조체 임베딩 Go에는 상속이 없다. 그래서 사용자 정의 타입을 조합하여 구조체로 정의하여 객체를 재사용한다. 사용자 정의 타입을 구조체의 필드로 지정하는 것을 임베딩이라고 한다.</description>
     </item>
