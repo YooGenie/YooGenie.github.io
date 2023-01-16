@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>특정id로찾기 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id%EB%A1%9C%EC%B0%BE%EA%B8%B0/</link>
+    <description>Recent content in 특정id로찾기 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 21 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id%EB%A1%9C%EC%B0%BE%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] 특정 id를 배열로 해서 select문 만들기</title>
+      <link>https://YooGenie.github.io/post/mysql/20210821/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20210821/</guid>
+      <description># 배경 특정 id 몇 개에 대한 정보를 찾아야 하는 상황이었다.
+# 문법 select * from 테이블명 where 컬럼 in (1,2.3,4) # 상황 member table에서 vip인 사람의 배송지 주소를 알고 싶다!! 배송지 주소는 delivery table안에 있다 배송지 주소를 조회하고 싶다! 우선 member table에서 vip인 사람부터 찾아보자! select * from member where type=&amp;#39;VIP&amp;#39;; 근데 모든 정보를 알 필요는 없고 delivery_id만 알면 된다.
+select delivery_id from member where type=&amp;#39;VIP&amp;#39;; 그러면 VIP인 사람의 delivery_id가 0개 이상이 나올 것이다.</description>
+    </item>
+    
+  </channel>
+</rss>

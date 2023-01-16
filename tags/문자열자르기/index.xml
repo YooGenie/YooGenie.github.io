@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>문자열자르기 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9E%90%EB%A5%B4%EA%B8%B0/</link>
+    <description>Recent content in 문자열자르기 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9E%90%EB%A5%B4%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] 컬럼 안에 있는 문자열을 구분자로 자르기</title>
+      <link>https://YooGenie.github.io/post/mysql/20220415/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20220415/</guid>
+      <description># 배경 회사에서 동료가 주소를 시,구,군까지 잘라서 카운트를 궁금해 했다. 예를 들어서 서울특별시 강남구 서초동이었다면 구까지 잘라서 해당되는 정보의 카운트를 원한 것이다.
+# 문법 SUBSTRING_INDEX(컬럼명, &amp;#39;구분자&amp;#39;, 카운트) # 예시1 select SUBSTRING_INDEX(&amp;#39;서울특별시 성동구 난계로 73 (하왕십리동)&amp;#39;, &amp;#39; &amp;#39;,1) ; -- 서울특별시 select SUBSTRING_INDEX(&amp;#39;서울특별시 성동구 난계로 73 (하왕십리동)&amp;#39;, &amp;#39; &amp;#39;,2) ; -- 서울특별시 성동구 select SUBSTRING_INDEX(&amp;#39;서울특별시 성동구 난계로 73 (하왕십리동)&amp;#39;, &amp;#39; &amp;#39;,3) ; -- 서울특별시 성동구 난계로 select SUBSTRING_INDEX(&amp;#39;서울특별시 성동구 난계로 73 (하왕십리동)&amp;#39;, &amp;#39; &amp;#39;,4) ; -- 서울특별시 성동구 난계로 73 select SUBSTRING_INDEX(&amp;#39;서울특별시 성동구 난계로 73 (하왕십리동)&amp;#39;, &amp;#39; &amp;#39;,5) ; -- 서울특별시 성동구 난계로 73 (하왕십리동) 왼쪽부터 한개씩 정보를 추가해서 알 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

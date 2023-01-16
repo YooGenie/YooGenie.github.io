@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>타임존체크 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4%EC%B2%B4%ED%81%AC/</link>
+    <description>Recent content in 타임존체크 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4%EC%B2%B4%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] 타임존을 Asia/Seoul으로 설정하는 방법</title>
+      <link>https://YooGenie.github.io/post/mysql/20221001/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20221001/</guid>
+      <description># 배경 시스템을 서울로 설정하고 싶었다.
+# 설정 방법 SET GLOBAL time_zone=&amp;#39;Asia/Seoul&amp;#39;; SET time_zone=&amp;#39;Asia/Seoul&amp;#39;; # 확인하는 방법 SELECT @@global.time_zone, @@session.time_zone; #결과 이렇게 변경이 되었다. 만약에 잘되지 않는 다면 아래 링크 참조하기 참조 링크 ​ ​ ​</description>
+    </item>
+    
+    <item>
+      <title>[MySQL] 타임존 설정코드가 안될 때</title>
+      <link>https://YooGenie.github.io/post/mysql/20220930/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20220930/</guid>
+      <description># 배경 타임존 설정 코드를 쳤다.
+SET GLOBAL time_zone=&amp;#39;Asia/Seoul&amp;#39;; 그런데 아래와 같은 에러 메시지가 나온다.
+ERROR 1298 (HY000): Unknown or incorrect time zone: &amp;#39;Asia/Seoul&amp;#39; # 해결방안 아래 사이트에 접속한다. 다운로드 받는 사이트 MySQL5.7 이상이어서 그림에 표시 된 걸 다운 받았다. 그리고 압축을 풀었다. 코드를 작성한다.
+use mysql source [파일이 있는 절대경로] ex) source C:\Users\bsit\Downloads\timezone_leaps.sql 잘 적용됐는지 테스트 한다. 아래 쿼리를 작성하면 그림과 같은 결과 같이 나온다. SELECT b.name, a.time_zone_id FROM mysql.</description>
+    </item>
+    
+    <item>
+      <title>[MySQL] 타임존 확인하는 방법</title>
+      <link>https://YooGenie.github.io/post/mysql/20220929/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20220929/</guid>
+      <description># 배경 DB에 현재 시간이 들어갈 때 스키마마다 값이 달랐다. A는 현재 서울 시간, B는 UTC 시간이었다. 그래서 각각 타임존을 조회하고 싶었다.
+# 문법 select @@global.time_zone, @@session.time_zone; # 결과 시스템 시간으로 되어있었다. 그럼 현재 시간은 몇 시일까? select now(); -- 2022-09-29 09:30:37 로컬 DB라서 컴퓨터 시간과 동일하다.
+​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

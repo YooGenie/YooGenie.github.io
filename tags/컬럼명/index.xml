@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>컬럼명 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85/</link>
+    <description>Recent content in 컬럼명 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] 컬럼명 변경하기</title>
+      <link>https://YooGenie.github.io/post/mysql/20221101/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20221101/</guid>
+      <description># 배경 비즈니스 로직이 변경되면서 name를 ref_name으로 변경해야 했다.
+# 문법 ALTER TABLE [테이블명] RENAME COLUMN [변경 전 컬럼명] TO [변경후 컬럼명] # 예시 ALTER TABLE goods RENAME COLUMN name TO ref_name; ​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

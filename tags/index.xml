@@ -6,13 +6,274 @@
     <description>Recent content in Tags on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>공지</title>
       <link>https://YooGenie.github.io/tags/%EA%B3%B5%EC%A7%80/</link>
-      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/%EA%B3%B5%EC%A7%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>db</title>
+      <link>https://YooGenie.github.io/tags/db/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/db/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://YooGenie.github.io/tags/mysql/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rename</title>
+      <link>https://YooGenie.github.io/tags/rename/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/rename/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://YooGenie.github.io/tags/sql/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발자</title>
+      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>컬럼명</title>
+      <link>https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>컬럼명변경</title>
+      <link>https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85%EB%B3%80%EA%B2%BD/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EC%BB%AC%EB%9F%BC%EB%AA%85%EB%B3%80%EA%B2%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL버전</title>
+      <link>https://YooGenie.github.io/tags/mysql%EB%B2%84%EC%A0%84/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/mysql%EB%B2%84%EC%A0%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>버전</title>
+      <link>https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>버전체크</title>
+      <link>https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84%EC%B2%B4%ED%81%AC/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84%EC%B2%B4%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time_zone</title>
+      <link>https://YooGenie.github.io/tags/time_zone/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/time_zone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>타임존</title>
+      <link>https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>타임존체크</title>
+      <link>https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4%EC%B2%B4%ED%81%AC/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%83%80%EC%9E%84%EC%A1%B4%EC%B2%B4%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>error</title>
+      <link>https://YooGenie.github.io/tags/error/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error Code: 1093</title>
+      <link>https://YooGenie.github.io/tags/error-code-1093/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/error-code-1093/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL문제</title>
+      <link>https://YooGenie.github.io/tags/sql%EB%AC%B8%EC%A0%9C/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/sql%EB%AC%B8%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>update</title>
+      <link>https://YooGenie.github.io/tags/update/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>서브쿼리</title>
+      <link>https://YooGenie.github.io/tags/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>에러메시지</title>
+      <link>https://YooGenie.github.io/tags/%EC%97%90%EB%9F%AC%EB%A9%94%EC%8B%9C%EC%A7%80/</link>
+      <pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EC%97%90%EB%9F%AC%EB%A9%94%EC%8B%9C%EC%A7%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>date</title>
+      <link>https://YooGenie.github.io/tags/date/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/date/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Format</title>
+      <link>https://YooGenie.github.io/tags/format/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/format/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>string를date</title>
+      <link>https://YooGenie.github.io/tags/string%EB%A5%BCdate/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/string%EB%A5%BCdate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>포맷</title>
+      <link>https://YooGenie.github.io/tags/%ED%8F%AC%EB%A7%B7/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%8F%AC%EB%A7%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SUBSTRING</title>
+      <link>https://YooGenie.github.io/tags/substring/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/substring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>구분자로자르기</title>
+      <link>https://YooGenie.github.io/tags/%EA%B5%AC%EB%B6%84%EC%9E%90%EB%A1%9C%EC%9E%90%EB%A5%B4%EA%B8%B0/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EA%B5%AC%EB%B6%84%EC%9E%90%EB%A1%9C%EC%9E%90%EB%A5%B4%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>문자열자르기</title>
+      <link>https://YooGenie.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9E%90%EB%A5%B4%EA%B8%B0/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9E%90%EB%A5%B4%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>https://YooGenie.github.io/tags/json/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json_extract</title>
+      <link>https://YooGenie.github.io/tags/json_extract/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/json_extract/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>특정값 추출하기</title>
+      <link>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95%EA%B0%92-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95%EA%B0%92-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0/</guid>
       <description></description>
     </item>
     
@@ -44,15 +305,6 @@
     </item>
     
     <item>
-      <title>개발자</title>
-      <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>개발자회고</title>
       <link>https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
@@ -80,60 +332,6 @@
     </item>
     
     <item>
-      <title>db</title>
-      <link>https://YooGenie.github.io/tags/db/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/db/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>json</title>
-      <link>https://YooGenie.github.io/tags/json/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/json/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>json_extract</title>
-      <link>https://YooGenie.github.io/tags/json_extract/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/json_extract/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MySQL</title>
-      <link>https://YooGenie.github.io/tags/mysql/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>https://YooGenie.github.io/tags/sql/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>특정값 추출하기</title>
-      <link>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95%EA%B0%92-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0/</link>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95%EA%B0%92-%EC%B6%94%EC%B6%9C%ED%95%98%EA%B8%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bool</title>
       <link>https://YooGenie.github.io/tags/bool/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
@@ -148,15 +346,6 @@
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/encryptkey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>error</title>
-      <link>https://YooGenie.github.io/tags/error/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://YooGenie.github.io/tags/error/</guid>
       <description></description>
     </item>
     
@@ -292,6 +481,51 @@
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/tags/wkhtmltopdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>in 사용</title>
+      <link>https://YooGenie.github.io/tags/in-%EC%82%AC%EC%9A%A9/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/in-%EC%82%AC%EC%9A%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>select</title>
+      <link>https://YooGenie.github.io/tags/select/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/select/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>조회하기</title>
+      <link>https://YooGenie.github.io/tags/%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>특정id</title>
+      <link>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>특정id로찾기</title>
+      <link>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id%EB%A1%9C%EC%B0%BE%EA%B8%B0/</link>
+      <pubDate>Sat, 21 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/tags/%ED%8A%B9%EC%A0%95id%EB%A1%9C%EC%B0%BE%EA%B8%B0/</guid>
       <description></description>
     </item>
     

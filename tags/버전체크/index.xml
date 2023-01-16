@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>버전체크 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84%EC%B2%B4%ED%81%AC/</link>
+    <description>Recent content in 버전체크 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EB%B2%84%EC%A0%84%EC%B2%B4%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] 버전 확인 방법</title>
+      <link>https://YooGenie.github.io/post/mysql/20221006/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20221006/</guid>
+      <description># 배경 맥북에 mysql를 설치하기 위해서 버전을 확인 하고 싶었다.
+# 방법 SELECT VERSION(); #결과 8.0.22
+# 잡담 굳이 같은 버전을 받은 이유... 잘 쓰고 있던 버전이라서... 회사에서 사용하는 건데 버전 문제가 생길까... 무서워서 ​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

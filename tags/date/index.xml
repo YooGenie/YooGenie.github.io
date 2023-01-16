@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>date on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/date/</link>
+    <description>Recent content in date on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 02 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/date/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[MySQL] string를 date 타입으로 변경하는 방법</title>
+      <link>https://YooGenie.github.io/post/mysql/20220602/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20220602/</guid>
+      <description># 배경 회사에서 배너를 만드는데 start_date와 end_date를 YYYYMMDDHHmm 12자리 string으로 저장을 했다. 현재 이 배너가 활성화 되어야하는지 체크 하려면 날짜를 봐야했다. 그냥 비교가 되지 않아서 string을 date 타입으로 변경해서 select문을 해야한다는 걸 알았다.
+# 문법 STR_TO_DATE( string으로된데이터 , date형식) # 예시 select STR_TO_DATE(&amp;#39;202206022210&amp;#39;, &amp;#39;%Y%m%d%H%i&amp;#39;); select STR_TO_DATE(&amp;#39;202206022210&amp;#39;, &amp;#39;%Y%m%d&amp;#39;); # 결과 2022-06-02 22:10:00 2022-06-02 # Type 형식 표기 예시 %Y%m%d 2022-06-02 %Y%m%d%H%i%s 2022-06-02 22:10:00 %H%i%s 22:10:06 # string과 date 포맷 같아야함 string이 2022-02-08이면 date 포맷도 %Y-%m-%d 이렇게 써야한다.</description>
+    </item>
+    
+  </channel>
+</rss>

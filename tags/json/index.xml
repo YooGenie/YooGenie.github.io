@@ -6,9 +6,21 @@
     <description>Recent content in json on 괴발개발 성장기🐾</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Mysql] json 컬럼안에 있는 특정 값 찾는 방법</title>
+      <title>[MySQL] 날짜/시간 형식(포맷) 설정해서 값 찾기</title>
+      <link>https://YooGenie.github.io/post/mysql/20211228/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/mysql/20211228/</guid>
+      <description># 목표 날짜와 시간을 분리하기
+# 컬럼안에 있는 값 2021-03-02 10:41:05 # 날짜를 찾는 법 DATE_FORMAT(컬럼명 ,&amp;#39;%Y-%m-%d&amp;#39;) # 예시 select DATE_FORMAT(created_at,&amp;#39;%Y-%m-%d&amp;#39;) from donations; # 결과값 2021-03-02
+# 시간 찾는 방법 DATE_FORMAT(컬럼명 ,&amp;#39;%H:%i:%s&amp;#39;) # 예시 select DATE_FORMAT(created_at,&amp;#39;%H:%i:%s&amp;#39;) from donations; # 결과값 10:45:24
+​ ​ ​</description>
+    </item>
+    
+    <item>
+      <title>[MySQL] json 컬럼안에 있는 특정 값 찾는 방법</title>
       <link>https://YooGenie.github.io/post/mysql/20211222/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
       
