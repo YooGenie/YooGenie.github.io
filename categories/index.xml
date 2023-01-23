@@ -19,7 +19,7 @@
     <item>
       <title>MySQL</title>
       <link>https://YooGenie.github.io/categories/mysql/</link>
-      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/categories/mysql/</guid>
       <description></description>
@@ -37,7 +37,7 @@
     <item>
       <title>회고</title>
       <link>https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
@@ -49,6 +49,24 @@
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://YooGenie.github.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitLab</title>
+      <link>https://YooGenie.github.io/categories/gitlab/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/categories/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>회사생활</title>
+      <link>https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C/</guid>
       <description></description>
     </item>
     

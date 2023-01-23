@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yarn on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/yarn/</link>
+    <description>Recent content in Yarn on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/yarn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#2 javaScript에서 패키지 관리자 툴 설치</title>
+      <link>https://YooGenie.github.io/post/company/20201222/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201222/</guid>
+      <description># javaScript에서 모듈을 설치 할 수 있는 패키지 관리자 툴 npm node packged Manager의 약자로 Node.js에서 주로 사용했던 패키지 관리자 툴 이 패키지는 온라인 데이터베이스로 이루어져 있습니다. yarn 페이스북에서 npm을 보완하고 속도를 빠르게 한 패키지 매니저 툴 시작하는 방법 node.js 다운받기 git bash에서 버전 체크 node -v git bash에서 yarn 설치(한번만 하면됨) npm install -g yarn GoLand에서 모듈을 그대로 설치 yarn install GoLand에서 yarn 버전체크 yarn -v 프로젝트 시작(local에서 웹 접속) yarn start ​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

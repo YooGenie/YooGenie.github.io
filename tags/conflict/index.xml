@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conflict on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/conflict/</link>
+    <description>Recent content in conflict on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/conflict/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#9 Stash 임시저장하는 방법</title>
+      <link>https://YooGenie.github.io/post/company/20201229/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201229/</guid>
+      <description>stash : 브랜치 전환을 하거나 커밋 변경을 해야할때 임시적으로 저장할 수 있는 명령어 &amp;lt; 마스터에서 모르고 작업한 경우 &amp;gt; 임시저장 임의 이름으로 저장하기 git stash 이름 지정해서 저장하기 방법 : git stash save [명칭] 예시 : git stash save masterbranch stash 기록 확인 git stash list 저장된 stash 불러오기 가장 최근에 저장된 stash를 불러온다 git stash apply 원하는 stash 불러오기 방법 : git stash apply [stash아이디] 예시 : git stash apply stash@{1} 그리고 나서 작업 시작하기 보충 stash 기록이 모두 제거 git stash clear stash를 복원하고 바로 제거 git stash pop 가장 최근에 저장한 stash를 삭제 git stash drop ​ ​ ​</description>
+    </item>
+    
+    <item>
+      <title>#8 GitLab Merge Request 생성하기</title>
+      <link>https://YooGenie.github.io/post/company/20201228/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201228/</guid>
+      <description>push 성공 주소 클릭 페이지 작성 Assignee는 XXX님으로 설정 Submit merge request 클릭 후 기다리면 됨 ​ ​ ​</description>
+    </item>
+    
+    <item>
+      <title>#7 rebase 하는 방법</title>
+      <link>https://YooGenie.github.io/post/company/20201227/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201227/</guid>
+      <description>rebase 하는 방법 코드 수정 commit 하고 commit 로그를 하나로 합치기 위해서 Rebase (2가지방법) push 전 commit 로그 두개를 rebase log를 통하여 commit이 두개인 것을 확인 git log commit을 하나로 합치는 작업 진행 git rebase -i HEAD~2 &amp;lt; vi 편집기 사용 &amp;gt; 2-1. [i] 또는 [insert]를 눌러서 편집 시작 2-2. 두개의 pick 중 1개는 pick으로 유지 하나는 s로 변경 2-3. [esc]키를 눌러서 빠져나오기 2-4. 창을 한번 클릭한 뒤 :wq작성하고 빠져나오기 commit 메세지 한개로 수정하기 [DD] 또는 [D + ↓]`를 사용하여 줄 삭제 하나의 메세지(체크된 박스)만 유지 log가 하나로 합쳐진 것을 확인 Pull하고 충돌난다면 push &amp;ndash;force 방법 : git push [별칭] -f [이슈번호] 예시 : git push sunny -f 9 push 후 GitLab에 commit이 두개 인 경우의 rebase log를 통하여 commit이 두개인 것을 확인 git log commit을 하나로 합치는 작업 진행 git rebase -i HEAD~2 &amp;lt; vi 편집기 사용&amp;gt; 2-1) [i] 또는 [insert]를 눌러서 편집 시작 2-2) 두개의 pick 중 1개는 pick으로 유지 하나는 s로 변경 2-3) [esc]키를 눌러서 빠져나오기 2-4) 창을 한번 클릭한 뒤 :wq작성하고 빠져나오기 commit 메세지 한개로 수정하기 [DD] 또는 [D + ↓]를 사용하여 줄 삭제 하나의 메세지(체크된 박스)만 유지 log가 하나로 합쳐진 것을 확인 Pull하고 충돌난다면 [Push 전 Pull한 이후 충돌나면?</description>
+    </item>
+    
+    <item>
+      <title>#6 conflict 해결 방법</title>
+      <link>https://YooGenie.github.io/post/company/20201226/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201226/</guid>
+      <description>conflict 나는 경우 push 하기전 commit 후 pull 받았을 때 conflict이 난 경우 Merge request한 후에 conflict이 난 경우 수정 중 다른 작성자가 같은 코드를 수정하고 올렸을 경우 다음과 같은 conflict이 발생합니다. 충동 해결 방법 conflict 발생시 다음과 같은 경로로 이동하여 conflict를 해결합니다. TIP : 여러개의 파일이 충돌이 날 수 있기 때문에 최상위 디렉토리에서 다음과 같은 경로로 이동합니다. 2)Merge를 클릭 Accept Yours 로컬에 있는 코드를 받아들이겠다는 뜻입니다. Conflict이 난 상황에서 본인이 수정한 코드를 먼저 받아 들여서 로컬 창에 본인이 수정한 코드만 남게 됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

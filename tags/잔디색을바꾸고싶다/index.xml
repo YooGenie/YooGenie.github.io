@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>잔디색을바꾸고싶다 on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/%EC%9E%94%EB%94%94%EC%83%89%EC%9D%84%EB%B0%94%EA%BE%B8%EA%B3%A0%EC%8B%B6%EB%8B%A4/</link>
+    <description>Recent content in 잔디색을바꾸고싶다 on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/%EC%9E%94%EB%94%94%EC%83%89%EC%9D%84%EB%B0%94%EA%BE%B8%EA%B3%A0%EC%8B%B6%EB%8B%A4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[회고] GitHub 잔디 심기 3개월간 회고</title>
+      <link>https://YooGenie.github.io/post/retrospective/20220312/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/retrospective/20220312/</guid>
+      <description>2021-12-13 ~2022-03-12 아무 계획도 없이 하루에 한번 잔디를 심어보자는 생각으로 시작했다. 그렇게 3개월이 지났다. 너무 아무 계획없이 했나?
+처음엔 입사 초기 공부했던 것을 복습했다. 그 이후 무언가 만들어 보려고 이것 저것 시도 해봤지만 내가 부족한 점만 찾아서 중간에 멈췄다.
+부족한 부분을 공부하다가도 중간에 길을 잃은 적이 있다. 그래서 react 기초를 공부하다가 go 공부하고 알고리즘도 하고... 너무 계획없이 공부하는 느낌을 받았다. 그래서 세세한 계획은 짜지 못하지만 월 단위나 주단위로 공부할 것을 계획해보는 것은 어떨까?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merge on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/merge/</link>
+    <description>Recent content in Merge on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 26 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/merge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#6 conflict 해결 방법</title>
+      <link>https://YooGenie.github.io/post/company/20201226/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201226/</guid>
+      <description>conflict 나는 경우 push 하기전 commit 후 pull 받았을 때 conflict이 난 경우 Merge request한 후에 conflict이 난 경우 수정 중 다른 작성자가 같은 코드를 수정하고 올렸을 경우 다음과 같은 conflict이 발생합니다. 충동 해결 방법 conflict 발생시 다음과 같은 경로로 이동하여 conflict를 해결합니다. TIP : 여러개의 파일이 충돌이 날 수 있기 때문에 최상위 디렉토리에서 다음과 같은 경로로 이동합니다. 2)Merge를 클릭 Accept Yours 로컬에 있는 코드를 받아들이겠다는 뜻입니다. Conflict이 난 상황에서 본인이 수정한 코드를 먼저 받아 들여서 로컬 창에 본인이 수정한 코드만 남게 됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

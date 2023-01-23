@@ -145,6 +145,48 @@
 </div>
     </a>
     
+    <a href="/post/mysql/20221102/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src="/img/mysql.png" />
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300"># 배경 type이라는 컬럼을 추가 하고 싶었다. 그리고 맨 뒤가 아니라 A 컬럼 옆에 넣고 싶었다.
+# 문법 원하는 컬럼명 옆에 놓고 싶을 때 ALTER TABLE [테이블명] ADD [추가할 컬럼명] [자료형] AFTER [앞컬럼...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    <a href="/post/mysql/20221124/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src="/img/mysql.png" />
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[MySQL] 컬럼 타입 변경하는 방법</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300"># 배경 id를 한개만 저장해서 int를 사용했다. 하지만 id를 여러개 받아서 저장하는 걸로 비즈니스 로직이 변경되었다. 그래서 int를 text로 변경하는 상황이다.
+# 컬럼 타입 변경하는 방법 ALTER TABLE 테이블명 MO...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
     <a href="/post/mysql/20221101/">
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
@@ -293,48 +335,6 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
 </div>
     </a>
     
-    <a href="/post/mysql/20220415/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src="/img/mysql.png" />
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[MySQL] 컬럼 안에 있는 문자열을 구분자로 자르기</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300"># 배경 회사에서 동료가 주소를 시,구,군까지 잘라서 카운트를 궁금해 했다. 예를 들어서 서울특별시 강남구 서초동이었다면 구까지 잘라서 해당되는 정보의 카운트를 원한 것이다.
-# 문법 SUBSTRING_INDEX(컬럼명, &#39;구...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/04/15</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
-    <a href="/post/mysql/20211228/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src="/img/mysql.png" />
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[MySQL] 날짜/시간 형식(포맷) 설정해서 값 찾기</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300"># 목표 날짜와 시간을 분리하기
-# 컬럼안에 있는 값 2021-03-02 10:41:05 # 날짜를 찾는 법 DATE_FORMAT(컬럼명 ,&#39;%Y-%m-%d&#39;) # 예시 select DATE_FORMAT(created_...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2021/12/28</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
     
 
 <nav aria-label="page navigation">
@@ -354,12 +354,24 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
             <li class="page-item"><a href="/post/page/2/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-black hover:bg-pink-100 hover:text-black dark:text-white dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">2</a></li>
             
         
+            
+             
+            <li class="page-item"><a href="/post/page/3/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-black hover:bg-pink-100 hover:text-black dark:text-white dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">3</a></li>
+            
+        
+             
+            
+            <li class="page-item disabled"><a class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 cursor-auto pointer-events-none">...</a></li>
+            
+        
 
         
         <li class="page-item"><a href="/post/page/2/" rel="next" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100  bg-white text-black hover:bg-pink-100 hover:text-black dark:text-white dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Next</a></li>
         
 
         
+        
+        <li class="page-item"><a href="/post/page/4/" rel="last" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-black hover:bg-pink-100 hover:text-blue-700 dark:text-white dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Last</a></li>
         
     </ul>
 </nav>
@@ -396,6 +408,9 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
         href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/gitlab"> 🐰&nbsp; Gitlab</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
@@ -406,6 +421,9 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0"> 🐰&nbsp; 회고</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C"> 🐰&nbsp; 회사생활</a>
     
 </div>
 
@@ -434,6 +452,31 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
                 # bool
             </span></a>
+        <a href='/tags/branch'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # branch
+            </span></a>
+        <a href='/tags/checkout'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # checkout
+            </span></a>
+        <a href='/tags/clone'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # clone
+            </span></a>
+        <a href='/tags/commit%EB%A9%94%EC%8B%9C%EC%A7%80#%EC%B2%98%EB%A6%AC'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # commit메시지#처리
+            </span></a>
+        <a href='/tags/conflict'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # conflict
+            </span></a>
         <a href='/tags/date'>
             <span
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
@@ -448,31 +491,6 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
             <span
                 class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
                 # dto
-            </span></a>
-        <a href='/tags/encryptkey'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # encryptkey
-            </span></a>
-        <a href='/tags/error'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # error
-            </span></a>
-        <a href='/tags/error-code-1093'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # error-code-1093
-            </span></a>
-        <a href='/tags/format'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # format
-            </span></a>
-        <a href='/tags/go'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
-                # go
             </span></a>
     </div>
 </div>
@@ -496,6 +514,28 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
                 </div>
             </div>
         </a>
+        <a href="/post/mysql/20221102/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/mysql/20221124/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 타입 변경하는 방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/mysql/20221101/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -514,28 +554,6 @@ ERROR 1298 (HY000): Unknown or incorrect ti...</p>
                     <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 버전 확인 방법</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/10/06</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/mysql/20221001/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 타임존을 Asia/Seoul으로 설정하는 방법</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/10/01</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/mysql/20220930/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 타임존 설정코드가 안될 때</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/09/30</time>
                     </p>
                 </div>
             </div>

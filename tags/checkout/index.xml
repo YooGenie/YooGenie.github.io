@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>checkout on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/checkout/</link>
+    <description>Recent content in checkout on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/checkout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#4 branch 만드는 방법</title>
+      <link>https://YooGenie.github.io/post/company/20201224/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201224/</guid>
+      <description># 이슈생성방법 1) 두레이 작성법 개발스프린트 글에서 유저스토리 맡은 부분을 클릭 → 왼쪽 상단 &amp;hellip; 클릭 → 하위업무추가 → 신규 담당자: 본인이름 제목: 누구나 제목만 보고 업무를 파악할 수 있게 적는다. 내용: # 작업목표 (체크박스 이용해서 쓰기) 2) GitLab에서 Issues 생성 업무해당되는 레파지토리 이동 → 왼쪽 바 Issues 클릭 → new issue 클릭 → 작성후 Submit issue → 브랜치가 생성 → 이주소를 두레이에 작성 new issue 작성법 - GitLab에서 Title: 두레이 제목과 똑같이 Description: 두레이 업무 URL 쓰기 Assignee: 본인선택 # Branch 생성 master에서 pull 받은 뒤에 진행 전체 브랜치 내역 확인 git branch 새로운 브랜치를 생성, 해당 브랜치로 이동 동시 수행 git checkout -b 브랜치이름(=이슈번호) 해당 브랜치로 이동 git checkout 브랜치이름 해당 브랜치가 삭제 git branch -d 브랜치이름 ​ ​ ​</description>
+    </item>
+    
+  </channel>
+</rss>

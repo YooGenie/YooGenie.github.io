@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>status on 괴발개발 성장기🐾</title>
+    <link>https://YooGenie.github.io/tags/status/</link>
+    <description>Recent content in status on 괴발개발 성장기🐾</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://YooGenie.github.io/tags/status/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#5 Pull과 push</title>
+      <link>https://YooGenie.github.io/post/company/20201225/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://YooGenie.github.io/post/company/20201225/</guid>
+      <description>#Pull 할 경우 브랜치 만들기 전 master에서 pull 수정 작업 Commit 한 후 Pull git pull upstream master #push 할 때 코드 변경사항(추가되거나 수정 혹은 삭제)을 commit 현재상태확인하기 git status commit 내역 추가 git add . 저장하기 방법 : git commit -m &amp;#34;#브랜치번호 이슈제목&amp;#34; 예시 : git commit -m &amp;#34;#9 코드리뷰 후 수정&amp;#34; pull 하기 git pull upstream master 만약 충돌이 난다면 Conflict 해결방법 참고
+3)push 저장소 이름 / 이슈번호</description>
+    </item>
+    
+  </channel>
+</rss>
