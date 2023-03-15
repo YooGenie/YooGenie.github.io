@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+
+<title>괴발개발 성장기🐾 | [golang] 구조체(struct) 공부하기</title>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="괴발개발 성장기🐾 | [golang] 구조체(struct) 공부하기" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ccbe8916080bfe192671bc902cea039cac0b91f8a9616e3d8d44e6192a79e75f.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="구조체 -다른 타입 여러 필드를 하나로 묶어주는 것입니다.
+기본 구조체 type 타입명 struct { 필드명 타입 필드명 타입 ... } 예제 type Donor struct { DonationId int64 NationalityType string DonorType string Name string Mobile string RegistrationNo string Email string Check bool } 구조체를 선언하는 방법 var 변수명 구조체이름 예시 var donorStruct Donor Donor 타입으로 변수를 선언했습니다. 배열 표현 방식 var 변수명 [요소개수]타입 예시 var arr2 [6]int 초기화 설정 방법 예시 func SetStruct() { var donorStruct Donor fmt.">
+<meta property="og:site_name" content="괴발개발 성장기🐾">
+<meta property="og:description" content="구조체 -다른 타입 여러 필드를 하나로 묶어주는 것입니다.
+기본 구조체 type 타입명 struct { 필드명 타입 필드명 타입 ... } 예제 type Donor struct { DonationId int64 NationalityType string DonorType string Name string Mobile string RegistrationNo string Email string Check bool } 구조체를 선언하는 방법 var 변수명 구조체이름 예시 var donorStruct Donor Donor 타입으로 변수를 선언했습니다. 배열 표현 방식 var 변수명 [요소개수]타입 예시 var arr2 [6]int 초기화 설정 방법 예시 func SetStruct() { var donorStruct Donor fmt.">
+<meta property="og:url" content="https://YooGenie.github.io/post/golang/20220215/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://YooGenie.github.io/post/golang/20220215/">
+
+<meta name="twitter:description" content="구조체 -다른 타입 여러 필드를 하나로 묶어주는 것입니다.
+기본 구조체 type 타입명 struct { 필드명 타입 필드명 타입 ... } 예제 type Donor struct { DonationId int64 NationalityType string DonorType string Name string Mobile string RegistrationNo string Email string Check bool } 구조체를 선언하는 방법 var 변수명 구조체이름 예시 var donorStruct Donor Donor 타입으로 변수를 선언했습니다. 배열 표현 방식 var 변수명 [요소개수]타입 예시 var arr2 [6]int 초기화 설정 방법 예시 func SetStruct() { var donorStruct Donor fmt.">
+<meta property="article:published_time" content="2022-02-15T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2022-02-15T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://YooGenie.github.io/img/gogo.PNG">
+<meta property="og:image:url" content="https://YooGenie.github.io/img/gogo.PNG">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-pink-800 dark:bg-warmgray-900">
+    <div class="container max-w-screen-xl mr-auto ml-auto dark:text-white ">
+        <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6 dark:bg-warmgray-900">
+            <div class="flex items-center flex-no-shrink bg-pink-800 text-black mr-6 dark:text-white">
+                <a href="https://YooGenie.github.io"><span class="font-semibold text-2xl tracking-tight dark:bg-warmgray-900">괴발개발 성장기🐾</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-black dark:text-white" ></i></button>
+                    <span class="text-black dark:text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-black hover:opacity-50 dark:text-white" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        Home
+                    </a>
+                    
+                    <a href="/about"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        About
+                    </a>
+                    
+                </div>
+                <div class="text-black invisible md:visible dark:text-white">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;[golang] 구조체(struct) 공부하기</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2022/02/15
+              </h4>
+            </section>
+            
+            <div id="tags">
+              <span class="icon-local_offer mr-1"></span>
+              
+             <a href='https://YooGenie.github.io/tags/go' class="hover:bg-pink-100"># go</a>
+              
+             <a href='https://YooGenie.github.io/tags/golang' class="hover:bg-pink-100"># golang</a>
+              
+             <a href='https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># go개발자</a>
+              
+             <a href='https://YooGenie.github.io/tags/go%EC%96%B8%EC%96%B4' class="hover:bg-pink-100"># go언어</a>
+              
+             <a href='https://YooGenie.github.io/tags/struct' class="hover:bg-pink-100"># struct</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4' class="hover:bg-pink-100"># 구조체</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4-%EC%82%AC%EC%9A%A9%EB%B2%95' class="hover:bg-pink-100"># 구조체 사용법</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%95%88%EC%97%90-%EA%B5%AC%EC%A1%B0%EC%B2%B4' class="hover:bg-pink-100"># 구조체안에 구조체</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># 개발자</a>
+              
+            </div>
+            
+          </div>
+        </aside>
+        
+        <div style="display: flex; justify-content: center">
+          <img class="py-4" style="width: 400px;" src="https://YooGenie.github.io/img/gogo.PNG">
+        </div>
+
+        
+        
+
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5"><h1 id="구조체">구조체</h1>
+<p>-다른 타입 여러 필드를 하나로 묶어주는 것입니다.</p>
+<h1 id="기본-구조체">기본 구조체</h1>
+<pre tabindex="0"><code>type 타입명 struct {
+필드명 타입
+필드명 타입
+...
+}
+</code></pre><h2 id="예제">예제</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Donor</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonationId</span>      <span style="color:#66d9ef">int64</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NationalityType</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonorType</span>       <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>            <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Mobile</span>          <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">RegistrationNo</span>  <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Email</span>           <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Check</span>           <span style="color:#66d9ef">bool</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h1 id="구조체를-선언하는-방법">구조체를 선언하는 방법</h1>
+<pre tabindex="0"><code>var 변수명 구조체이름
+</code></pre><h2 id="예시">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStruct</span> <span style="color:#a6e22e">Donor</span>
+</span></span></code></pre></div><ul>
+<li>Donor 타입으로 변수를 선언했습니다.</li>
+</ul>
+<h2 id="배열-표현-방식">배열 표현 방식</h2>
+<pre tabindex="0"><code>var 변수명 [요소개수]타입
+</code></pre><h3 id="예시-1">예시</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr2</span> [<span style="color:#ae81ff">6</span>]<span style="color:#66d9ef">int</span>
+</span></span></code></pre></div><h1 id="초기화-설정-방법">초기화 설정 방법</h1>
+<h2 id="예시-2">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">SetStruct</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStruct</span> <span style="color:#a6e22e">Donor</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;초기값 설정 전 :&#34;</span>, <span style="color:#a6e22e">donorStruct</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">DonationId</span> = <span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">Email</span> = <span style="color:#e6db74">&#34;1@test.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">NationalityType</span> = <span style="color:#e6db74">&#34;NATIVE&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">DonorType</span> = <span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;홍길동&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">Mobile</span> = <span style="color:#e6db74">&#34;0000000000&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">Check</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorStruct</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;이름 필드 값 출력 :&#34;</span>, <span style="color:#a6e22e">donorStruct</span>.<span style="color:#a6e22e">Name</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="결과">결과</h3>
+<pre tabindex="0"><code>초기값 설정 전 : {0       false}
+초기값 설정 후 : {123 NATIVE INDIVIDUAL 홍길동 0000000000  1@test.com true}
+이름 필드 값 출력 : 홍길동
+</code></pre><ul>
+<li>초기값을 설정하지 않는 경우 int는 0, string은 “”, bool은 false으로 설정됩니다.</li>
+</ul>
+<hr>
+<h1 id="모든-필드를-초기화-하는-방법">모든 필드를 초기화 하는 방법</h1>
+<ol>
+<li>한줄로 표현하기</li>
+</ol>
+<ul>
+<li>구조체에 순서대로 모든 필드에 값을 넣으면 됩니다.</li>
+</ul>
+<h2 id="예시-3">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStructV1</span> = <span style="color:#a6e22e">Donor</span>{<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;NATIVE&#34;</span>, <span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>, <span style="color:#e6db74">&#34;홍길동&#34;</span>, <span style="color:#e6db74">&#34;0000000000&#34;</span>, <span style="color:#e6db74">&#34;9901012000000&#34;</span>, <span style="color:#e6db74">&#34;1@test.com&#34;</span>, <span style="color:#66d9ef">true</span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;V1 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorStructV1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// V1 초기값 설정 후 : {1 NATIVE INDIVIDUAL 홍길동 0000000000 9901012000000 1@test.com true}
+</span></span></span></code></pre></div><ol start="2">
+<li>여러줄로 표현하기</li>
+</ol>
+<ul>
+<li>여러줄로 표현할 때에는 마지막 , (쉼표)를 꼭 찍어줘야한다. 쉼표 뒤에 있는 } 중괄호 닫힘은 다음 줄에 적어야지 적용이 됩니다.</li>
+</ul>
+<h2 id="예시-4">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStructV2</span>  = <span style="color:#a6e22e">Donor</span>{
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;NATIVE&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;홍길동&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;0000000000&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;9901012000000&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;1@test.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;V2 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorStructV2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// V2 초기값 설정 후 : {1 NATIVE INDIVIDUAL 홍길동 0000000000 9901012000000 1@test.com true}
+</span></span></span></code></pre></div><hr>
+<h1 id="일부-필드만-초기화하는-방법">일부 필드만 초기화하는 방법</h1>
+<ol>
+<li>한줄로 표현하기</li>
+</ol>
+<h2 id="예시-5">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStructV3</span> = <span style="color:#a6e22e">Donor</span>{<span style="color:#a6e22e">Name</span>: <span style="color:#e6db74">&#34;홍길동&#34;</span>, <span style="color:#a6e22e">Email</span>: <span style="color:#e6db74">&#34;1@test.com&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;V3 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorStructV3</span>)
+</span></span></code></pre></div><h3 id="결과-1">결과</h3>
+<pre tabindex="0"><code>V3 초기값 설정 후 : {0   홍길동   1@test.com false}
+</code></pre><ol start="2">
+<li>여러줄로 표현하기</li>
+</ol>
+<h2 id="예시-6">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorStructV4</span> = <span style="color:#a6e22e">Donor</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonationId</span>: <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>: <span style="color:#e6db74">&#34;홍길동&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Email</span>: <span style="color:#e6db74">&#34;1@test.com&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;V4 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorStructV4</span>)
+</span></span></code></pre></div><h3 id="결과-2">결과</h3>
+<pre tabindex="0"><code>V4 초기값 설정 후 : {100   홍길동   1@test.com false}
+</code></pre><hr>
+<h1 id="구조체를-포함하는-구조체">구조체를 포함하는 구조체</h1>
+<ul>
+<li>구조체 필드에 다른 구조체를 정의할 수 있습니다.</li>
+</ul>
+<pre tabindex="0"><code>type 구조체명 struct {
+필드명 다른구조체명
+}
+</code></pre><h2 id="예시-7">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">DonorReceipt</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Id</span>     <span style="color:#66d9ef">int64</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Status</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Type</span>   <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Note</span>   <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>   <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Donor</span>  <span style="color:#a6e22e">Donor</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>위에 Donor라는 구조체를 DonorReceipt 구조체 안에 포함을 시켰습니다.</li>
+</ul>
+<h1 id="구조체안에-구조체를-설정하는-방법">구조체안에 구조체를 설정하는 방법</h1>
+<p>예시</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donor</span> = <span style="color:#a6e22e">Donor</span>{
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;NATIVE&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;홍길동&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;0000000000&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;9901012000000&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;1@test.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorReceiptV1</span> = <span style="color:#a6e22e">DonorReceipt</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Id</span>:     <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Status</span>: <span style="color:#e6db74">&#34;Applied&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Donor</span>:  <span style="color:#a6e22e">donor</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;donor 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donor</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;donorReceipt V1 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorReceiptV1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorReceiptV2</span> = <span style="color:#a6e22e">DonorReceipt</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Id</span>:     <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Status</span>: <span style="color:#e6db74">&#34;Applied&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Donor</span>: <span style="color:#a6e22e">Donor</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonorType</span>: <span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>:      <span style="color:#e6db74">&#34;김철수&#34;</span>,
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;donorReceipt V2 초기값 설정 후 :&#34;</span>, <span style="color:#a6e22e">donorReceiptV2</span>)
+</span></span></code></pre></div><h3 id="결과-3">결과</h3>
+<pre tabindex="0"><code>donor 초기값 설정 후 : {1 NATIVE INDIVIDUAL 홍길동 0000000000 9901012000000 1@test.com true}
+donorReceipt V1 초기값 설정 후 : {1 Applied    {1 NATIVE INDIVIDUAL 홍길동 0000000000 9901012000000 1@test.com true}}
+donorReceipt V2 초기값 설정 후 : {1 Applied    {0  INDIVIDUAL 김철수    false}}
+</code></pre><ul>
+<li>donorReceiptV1는 변수 donor에 있는 전체 값을 Donor 필드에 넣었습니다.</li>
+<li>donorReceiptV2는 Donor 필드에 일부 값만 넣었습니다.</li>
+</ul>
+<hr>
+<h1 id="중복된-필드명이-있는-경우">중복된 필드명이 있는 경우</h1>
+<ul>
+<li>. (점)을 사용하여 한단계 더 접근 해서 값을 불러 옵니다.</li>
+</ul>
+<h2 id="예시-8">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">donorReceipt</span> = <span style="color:#a6e22e">DonorReceipt</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Id</span>:     <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Status</span>: <span style="color:#e6db74">&#34;Applied&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>: <span style="color:#e6db74">&#34;김영희&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Donor</span>: <span style="color:#a6e22e">Donor</span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonorType</span>: <span style="color:#e6db74">&#34;INDIVIDUAL&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span>:      <span style="color:#e6db74">&#34;김철수&#34;</span>,
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;donorReceipt 필드안에 있는 donor의 name 값 :&#34;</span>, <span style="color:#a6e22e">donorReceipt</span>.<span style="color:#a6e22e">Donor</span>.<span style="color:#a6e22e">Name</span>) <span style="color:#75715e">//김철수
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;donorReceipt 안에 name 값 :&#34;</span>, <span style="color:#a6e22e">donorReceipt</span>.<span style="color:#a6e22e">Name</span>) <span style="color:#75715e">//김영희
+</span></span></span></code></pre></div><ul>
+<li>재귀적인 표현이 불가능하다</li>
+</ul>
+<h2 id="예시-9">예시</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Donor</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonationId</span>      <span style="color:#66d9ef">int64</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">DonorReceipt</span> <span style="color:#a6e22e">DonorReceipt</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">DonorReceipt</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Id</span>     <span style="color:#66d9ef">int64</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Donor</span>  <span style="color:#a6e22e">Donor</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>위 처럼 코드를 짜면 Invalid recursive type &lsquo;DonorReceipt&rsquo; DonorReceipt → Donor → DonorReceipt 오류 문구가 뜨면서 컴파일이 되지 않습니다.</li>
+</ul>
+<p>​
+​
+​</p>
+</div>
+        
+        <aside id="meta" class="mt-8">
+          
+          <hr class="py-2">
+          <div id="categories">
+            <span class="icon-folder text-xl mr-1"></span>
+            
+            <span
+              class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm duration-200 hover:bg-pink-50 dark:bg-warmgray-800 dark:text-white dark:hover:bg-warmgray-700"><a
+                href='https://YooGenie.github.io/categories/golang'>golang</a></span>
+            
+          </div>
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4 ">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="https://YooGenie.github.io/post/golang/20220214/">
+              <div
+                class="transition-colors duration-300 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700 ">
+                <span class="icon-keyboard_arrow_left"></span> [golang] 배열 공부하기
+              </div>
+            </a>
+            
+          </div>
+          
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/golang/20220219/">
+            <div
+              class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
+              [golang] 타입(type) 확인 하는 방법 <span class="icon-keyboard_arrow_right"></span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            
+<div class="bg-white mb-3 pb-5 mt-4 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-pink-700 py-5 dark:text-gray-300 font-bold">유지니</p>
+    <div style="align-items:center; display: flex; justify-content:center;">
+    <div style="width: 200px;
+    height: 200px; border-radius: 70%; overflow: hidden;outline-style: solid;outline-color: #d1d5db ">
+        <img class="profile" src=https://user-images.githubusercontent.com/92665524/209554194-59ec211b-3bc5-485b-ae71-8d23441fe816.png  alt="프로필사진"></div>
+    </div>
+    <div class="text-center dark:text-gray-200 dark:hover:bg-warmgray-800 mt-5">
+        <p>Go developer</p>
+        <a href="https://github.com/YooGenie">Github</a>
+        <p style="color: #ffffff">설명 고민중</p>
+    </div>
+</div>
+
+        
+            
+            
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/git"> 🐰&nbsp; Git</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/gitlab"> 🐰&nbsp; Gitlab</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/javascript"> 🐰&nbsp; Javascript</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/macbook-%EC%9E%85%EB%AC%B8%EA%B8%B0"> 🐰&nbsp; Macbook 입문기</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/mysql"> 🐰&nbsp; Mysql</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/react"> 🐰&nbsp; React</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%85%90%EA%B3%B5%EB%B6%80"> 🐰&nbsp; 개념공부</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 개발일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"> 🐰&nbsp; 비동기 프로그래밍</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"> 🐰&nbsp; 사이드프로젝트</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 업무일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4"> 🐰&nbsp; 오픈소스</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0"> 🐰&nbsp; 회고</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C"> 🐰&nbsp; 회사생활</a>
+    
+</div>
+
+
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    
+</div>
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 font-bold dark:text-gray-300 init">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/0%EC%B1%84%EC%9A%B0%EA%B8%B0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 0채우기
+            </span></a>
+        <a href='/tags/1%EB%85%84%EC%B0%A8%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년차회고
+            </span></a>
+        <a href='/tags/1%EB%85%84%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년회고
+            </span></a>
+        <a href='/tags/3%EC%9E%90%EB%A6%AC'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 3자리
+            </span></a>
+        <a href='/tags/adapter'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # adapter
+            </span></a>
+        <a href='/tags/ant-design'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # ant-design
+            </span></a>
+        <a href='/tags/antd'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # antd
+            </span></a>
+        <a href='/tags/api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api
+            </span></a>
+        <a href='/tags/api%EC%A0%95%EC%9D%98'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api정의
+            </span></a>
+        <a href='/tags/app.js'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # app.js
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/retrospective/20230112/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;2022년 개발자 회고</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/01/12</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/sqs/20221115/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/concept/20221118/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/golang/20221109/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] listen tcp :7000: bind: address already in use 에러 메시지 해결방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/09</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/mysql/20221102/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://YooGenie.github.io" />
+    </form>
+</div>
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-pink-800 text-black p-6 dark:bg-warmgray-900 dark:text-white">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2022 <a href="https://YooGenie.github.io" class="duration-200 hover:opacity-50">괴발개발 성장기🐾</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>

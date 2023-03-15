@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+
+<title>괴발개발 성장기🐾 | [회고] 사업자 기부영수증 통합 발급 회고</title>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="괴발개발 성장기🐾 | [회고] 사업자 기부영수증 통합 발급 회고" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ccbe8916080bfe192671bc902cea039cac0b91f8a9616e3d8d44e6192a79e75f.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="배경 5월 종합소득세 신고할 때 사업자들은 기부건에 대한 기부금 영수증을 한장으로 받고 싶었했습니다. 현재 시스템은 기부1건에 기부영수증 1장이 나오는 상황이었습니다. 기부영수증 부분만 하면 3월말에 오픈할 수 있었지만 다른 업무도 현재 진행중이어서 5월 전 오픈을 목표로 잡고 진행했습니다.
+과정 새로운 프로젝트(API와 어드민화면)를 하면서 동시에 이 개발을 진행했습니다. 기부영수증 담당자로서 생각해야할 점들이 많았습니다. 하다가 막히는 부분이 있을 때마다 시니어 개발자에게 한번씩 체크를 했습니다.
+기획서를 보고 1차 회의 때 현재 사용하고 있는 다른 프로그램을 보면서 기획자와 소통하여 우리 프로그램에 어떻게 적용시킬지 상의 했습니다.">
+<meta property="og:site_name" content="괴발개발 성장기🐾">
+<meta property="og:description" content="배경 5월 종합소득세 신고할 때 사업자들은 기부건에 대한 기부금 영수증을 한장으로 받고 싶었했습니다. 현재 시스템은 기부1건에 기부영수증 1장이 나오는 상황이었습니다. 기부영수증 부분만 하면 3월말에 오픈할 수 있었지만 다른 업무도 현재 진행중이어서 5월 전 오픈을 목표로 잡고 진행했습니다.
+과정 새로운 프로젝트(API와 어드민화면)를 하면서 동시에 이 개발을 진행했습니다. 기부영수증 담당자로서 생각해야할 점들이 많았습니다. 하다가 막히는 부분이 있을 때마다 시니어 개발자에게 한번씩 체크를 했습니다.
+기획서를 보고 1차 회의 때 현재 사용하고 있는 다른 프로그램을 보면서 기획자와 소통하여 우리 프로그램에 어떻게 적용시킬지 상의 했습니다.">
+<meta property="og:url" content="https://YooGenie.github.io/post/retrospective/20220418/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://YooGenie.github.io/post/retrospective/20220418/">
+
+<meta name="twitter:description" content="배경 5월 종합소득세 신고할 때 사업자들은 기부건에 대한 기부금 영수증을 한장으로 받고 싶었했습니다. 현재 시스템은 기부1건에 기부영수증 1장이 나오는 상황이었습니다. 기부영수증 부분만 하면 3월말에 오픈할 수 있었지만 다른 업무도 현재 진행중이어서 5월 전 오픈을 목표로 잡고 진행했습니다.
+과정 새로운 프로젝트(API와 어드민화면)를 하면서 동시에 이 개발을 진행했습니다. 기부영수증 담당자로서 생각해야할 점들이 많았습니다. 하다가 막히는 부분이 있을 때마다 시니어 개발자에게 한번씩 체크를 했습니다.
+기획서를 보고 1차 회의 때 현재 사용하고 있는 다른 프로그램을 보면서 기획자와 소통하여 우리 프로그램에 어떻게 적용시킬지 상의 했습니다.">
+<meta property="article:published_time" content="2022-04-18T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2022-04-18T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://YooGenie.github.io/img/retrospective.png">
+<meta property="og:image:url" content="https://YooGenie.github.io/img/retrospective.png">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-pink-800 dark:bg-warmgray-900">
+    <div class="container max-w-screen-xl mr-auto ml-auto dark:text-white ">
+        <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6 dark:bg-warmgray-900">
+            <div class="flex items-center flex-no-shrink bg-pink-800 text-black mr-6 dark:text-white">
+                <a href="https://YooGenie.github.io"><span class="font-semibold text-2xl tracking-tight dark:bg-warmgray-900">괴발개발 성장기🐾</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-black dark:text-white" ></i></button>
+                    <span class="text-black dark:text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-black hover:opacity-50 dark:text-white" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        Home
+                    </a>
+                    
+                    <a href="/about"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        About
+                    </a>
+                    
+                </div>
+                <div class="text-black invisible md:visible dark:text-white">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;[회고] 사업자 기부영수증 통합 발급 회고</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2022/04/18
+              </h4>
+            </section>
+            
+            <div id="tags">
+              <span class="icon-local_offer mr-1"></span>
+              
+             <a href='https://YooGenie.github.io/tags/go%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># go개발자</a>
+              
+             <a href='https://YooGenie.github.io/tags/%ED%9A%8C%EA%B3%A0' class="hover:bg-pink-100"># 회고</a>
+              
+             <a href='https://YooGenie.github.io/tags/githab' class="hover:bg-pink-100"># githab</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90%ED%9A%8C%EA%B3%A0' class="hover:bg-pink-100"># 개발자회고</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B8%B0%EB%B6%80%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D' class="hover:bg-pink-100"># 기부금영수증</a>
+              
+             <a href='https://YooGenie.github.io/tags/%ED%8C%8C%EC%9D%B4%ED%8C%85' class="hover:bg-pink-100"># 파이팅</a>
+              
+            </div>
+            
+          </div>
+        </aside>
+        
+        <div style="display: flex; justify-content: center">
+          <img class="py-4" style="width: 400px;" src="https://YooGenie.github.io/img/retrospective.png">
+        </div>
+
+        
+        
+
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5"><h1 id="배경">배경</h1>
+<p>5월 종합소득세 신고할 때 사업자들은 기부건에 대한 기부금 영수증을 한장으로 받고 싶었했습니다.
+현재 시스템은 기부1건에 기부영수증 1장이 나오는 상황이었습니다.
+기부영수증 부분만 하면 3월말에 오픈할 수 있었지만 다른 업무도 현재 진행중이어서 5월 전 오픈을 목표로 잡고 진행했습니다.</p>
+<hr>
+<h1 id="과정">과정</h1>
+<p>새로운 프로젝트(API와 어드민화면)를 하면서 동시에 이 개발을 진행했습니다. 기부영수증 담당자로서 생각해야할 점들이 많았습니다. 하다가 막히는 부분이 있을 때마다 시니어 개발자에게 한번씩 체크를 했습니다.</p>
+<p>기획서를 보고 1차 회의 때 현재 사용하고 있는 다른 프로그램을 보면서 기획자와 소통하여 우리 프로그램에 어떻게 적용시킬지 상의 했습니다. 그 이후 DB를 어떻게 변경할지 고민했고 컬럼하나만 추가하면 된다는 것을 알게되었습니다.</p>
+<p>API 만드는 부분에서는 SQL문만 잘 작성하면 무난하게 끝날 수 있다고 생각했습니다. 그 과정에서 기부쪽에서 하나의 기부건에 대한 금액만 오는 코드만 있어서 다수의 기부건을 보낼 때 금액을 배열로 받아야해서 담당 개발자에게 필요한 함수를 요청했습니다. 그리고 기부영수증 문서인 HTML 수정을 프론트엔드 담당 개발자에게 부탁하여 도와주셨습니다.</p>
+<p>어드민에서는 검색을 한 후 리스트에서 원하는 기부건을 선택하여 기부건이 동일한 인물인지 체크하고 맞으면 발급하는 프로세스였습니다.</p>
+<hr>
+<h1 id="회고">회고</h1>
+<p>리스트에 체크박스가 있어서 체크하는것
+
+<img width="1011" alt="image" src="https://user-images.githubusercontent.com/92665524/216852308-89286209-810d-42a6-849b-48c4c911261d.png">
+
+우선 1차적으로 어드민 기획서를 봤을 때 내가 한번도 해보지 못했던 모습이었습니다. 그래서 걱정이 되었습니다
+체크박스있는 리스트를 처음 해봐서 andt 사이트를 보고 값이 어떻게 가고 오는지 체크했습니다.</p>
+<pre tabindex="0"><code>&lt;Table rowSelection={}/&gt;
+</code></pre><p>테이블안에 옵션만 설정하면 되는 일 있었습니다. 제가 겁을 먹은 것에 비해 쉽게 끝났습니다.
+페이지를 이동할 때 다른 페이지에 있는 체크 박스를 없애야 한다고 생각했습니다. 그래서 삽질을 하면서 코드를 짜고 있었습니다. 현재 진행상황을 기획자와 대화를 하다가 페이지 이동시 전에 있는 체크 박스를 없애면 통합 발급이 의미가 없는 같다는 말을 하셨습니다. 그래서 하던 일을 중단했습니다. 나는 리셋을 해야한다는 생각에 사로잡혀서 개발 시간을 많이 투자했던 것 같습니다.</p>
+<p>제가 미처 생각하지 못했던 부분이 있었습니다. 동일한 인물만 체크하면 된다고 생각했는데 기부건에 대한 상태를 체크해야했습니다. 기부영수증 신청이 가능한 상태가 4개중에서 기부영수증 발급은 2가지 상태에서만 가능하게 만들어야했는데 발급이 되면 안되는 상태에서도 발급이 가능하게 만들었습니다. 테스트를 하는 과정에서 상태값도 생각을 해야한다는 것을 깨달았습니다. 제가 넓게 생각한다고 생각했는데도 미처 체크하지 못했던 부분이었습니다. 백엔드에서 상태를 체크하는 코드를 금방 짰지만 어드민 화면에서 헤맸습니다.</p>
+<p>리스트에서 DonationRegistered , DonationPendingEstimate 를 선택한 경우 버튼을 비활성화 시키고 싶었습니다. 처음에는 find를 사용해서 제외 시켰는데 잘된다고 생각했는데 페이지전환을 할 때 잘되지 않았습니다. 수습때 멘토님께서 map, filter, find가 중요하다고 했던 게 기억이 나고 map를 자주 사용하다보니 find와 filter를 정확히 어떻게 사용해야하는지 잊고 있었습니다. 그래서 공부하면서
+어떤 경우에 뭐가 적합할지 파악한 후 filter를 이용하여 제외시켰습니다.</p>
+<p>기부영수증 관련해서는 기획자와 짝을 이루어서 진행했고 제가 주도적으로 프로젝트를 이끌었습니다. 설계쪽에서는 시니어 개발자의 도움을 받았습니다.</p>
+<p>기획자님과의 호흡이 저는 잘 맞았다고 생각합니다. (기획자분의 생각은&hellip;.모르겠지만) 문서일련번호와 같이 정책적으로 정해야하는 경우 기획자님과 함께 고민하고 의논하여 결정했습니다.</p>
+<p>개발을 하다 보니 개인 통합 발급도 같이 진행하는 것이 편할 것 같아서 기획자와 상의 하여 같이 진행을 했습니다. 개인통합 발급에서는 주민등록번호 전체를 검색하지 않는 이상 사용하는 팀에서 불편함을 느낄 것 같았습니다. 보안상 문제로 주민등록번호 전체를 조회할 수 없었습니다. 배포 후 피드밷을 받아서 수정해보기로 결정했습니다. 베타버전으로 개인통합 발급을 진행하기로 했습니다.</p>
+<p>배포 당일 DDL 수정을 하고 무사히 배포 되었습니다. 아직까지는 에러가 발생하지 않았습니다. 5월이 되면 실직적으로 사용자가 사용하게 된다고 했습니다. 그때 기획자와 제가 찾지 못했던 에러가 발생할 것라고 예상을 했습니다. 만약 에러가 발생하면 정확하게 원인을 찾고 에러를 수정하고 싶습니다.</p>
+<p>기부영수증에 오너쉽이 더 발휘 되는 것 같습니다. 그리고 최종 목표를 갖게 되었습니다. 기부 영수증이 안정화 되게 하고 싶습니다.</p>
+<p>​
+​
+​</p>
+</div>
+        
+        <aside id="meta" class="mt-8">
+          
+          <hr class="py-2">
+          <div id="categories">
+            <span class="icon-folder text-xl mr-1"></span>
+            
+            <span
+              class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm duration-200 hover:bg-pink-50 dark:bg-warmgray-800 dark:text-white dark:hover:bg-warmgray-700"><a
+                href='https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0'>회고</a></span>
+            
+          </div>
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4 ">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="https://YooGenie.github.io/post/git/20220416/">
+              <div
+                class="transition-colors duration-300 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700 ">
+                <span class="icon-keyboard_arrow_left"></span> [Git] git 사용자이름, 메일 확인방법
+              </div>
+            </a>
+            
+          </div>
+          
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/golang/20220422/">
+            <div
+              class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
+              [golang] sort 함수 사용하여 정렬하기 <span class="icon-keyboard_arrow_right"></span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            
+<div class="bg-white mb-3 pb-5 mt-4 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-pink-700 py-5 dark:text-gray-300 font-bold">유지니</p>
+    <div style="align-items:center; display: flex; justify-content:center;">
+    <div style="width: 200px;
+    height: 200px; border-radius: 70%; overflow: hidden;outline-style: solid;outline-color: #d1d5db ">
+        <img class="profile" src=https://user-images.githubusercontent.com/92665524/209554194-59ec211b-3bc5-485b-ae71-8d23441fe816.png  alt="프로필사진"></div>
+    </div>
+    <div class="text-center dark:text-gray-200 dark:hover:bg-warmgray-800 mt-5">
+        <p>Go developer</p>
+        <a href="https://github.com/YooGenie">Github</a>
+        <p style="color: #ffffff">설명 고민중</p>
+    </div>
+</div>
+
+        
+            
+            
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/git"> 🐰&nbsp; Git</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/gitlab"> 🐰&nbsp; Gitlab</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/javascript"> 🐰&nbsp; Javascript</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/macbook-%EC%9E%85%EB%AC%B8%EA%B8%B0"> 🐰&nbsp; Macbook 입문기</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/mysql"> 🐰&nbsp; Mysql</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/react"> 🐰&nbsp; React</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%85%90%EA%B3%B5%EB%B6%80"> 🐰&nbsp; 개념공부</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 개발일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"> 🐰&nbsp; 비동기 프로그래밍</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"> 🐰&nbsp; 사이드프로젝트</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 업무일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4"> 🐰&nbsp; 오픈소스</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0"> 🐰&nbsp; 회고</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C"> 🐰&nbsp; 회사생활</a>
+    
+</div>
+
+
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    
+</div>
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 font-bold dark:text-gray-300 init">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/0%EC%B1%84%EC%9A%B0%EA%B8%B0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 0채우기
+            </span></a>
+        <a href='/tags/1%EB%85%84%EC%B0%A8%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년차회고
+            </span></a>
+        <a href='/tags/1%EB%85%84%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년회고
+            </span></a>
+        <a href='/tags/3%EC%9E%90%EB%A6%AC'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 3자리
+            </span></a>
+        <a href='/tags/adapter'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # adapter
+            </span></a>
+        <a href='/tags/ant-design'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # ant-design
+            </span></a>
+        <a href='/tags/antd'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # antd
+            </span></a>
+        <a href='/tags/api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api
+            </span></a>
+        <a href='/tags/api%EC%A0%95%EC%9D%98'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api정의
+            </span></a>
+        <a href='/tags/app.js'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # app.js
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/retrospective/20230112/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;2022년 개발자 회고</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/01/12</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/sqs/20221115/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/concept/20221118/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/golang/20221109/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] listen tcp :7000: bind: address already in use 에러 메시지 해결방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/09</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/mysql/20221102/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://YooGenie.github.io" />
+    </form>
+</div>
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-pink-800 text-black p-6 dark:bg-warmgray-900 dark:text-white">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2022 <a href="https://YooGenie.github.io" class="duration-200 hover:opacity-50">괴발개발 성장기🐾</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>

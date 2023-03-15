@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+
+<title>괴발개발 성장기🐾 | 2021년 1월~3월까지 수습 멘토링 개발일지</title>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="괴발개발 성장기🐾 | 2021년 1월~3월까지 수습 멘토링 개발일지" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ccbe8916080bfe192671bc902cea039cac0b91f8a9616e3d8d44e6192a79e75f.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="2021-1-25 사업자번호 테스트케이스 수정 &#43; 정규표현방법, 디버그 이용방법 Go 언어는 string의 기본값은 빈문자이다. 2021-01-26 HTTP 공부, init(), 백엔드에서 API연결체크하는 방법 Authorization부분을 토큰이라고 하는데 하는 이유는 놀이동산에서 표를 산 이후 자유이용권인걸 알리기 위해 도장만 보여주는 개념이다. 2021-01-27 개발 프로세스 분석 -&gt; 설계 -&gt; 구현(코딩) -&gt; 테스트 -&gt; 유지보수 개발자는 전체를 해야하고 TDD개발 방식이지만 테스트와 구현이 순서가 바뀌는것은 아니다. 기본 순서는 저 순서이다. TDD개방 방식은 분석-설계-구현을 테스트하는 것이다. 단위test를 하는 건 뭘 할지 알 수 있고, 설계를 잘했다는 것이다.">
+<meta property="og:site_name" content="괴발개발 성장기🐾">
+<meta property="og:description" content="2021-1-25 사업자번호 테스트케이스 수정 &#43; 정규표현방법, 디버그 이용방법 Go 언어는 string의 기본값은 빈문자이다. 2021-01-26 HTTP 공부, init(), 백엔드에서 API연결체크하는 방법 Authorization부분을 토큰이라고 하는데 하는 이유는 놀이동산에서 표를 산 이후 자유이용권인걸 알리기 위해 도장만 보여주는 개념이다. 2021-01-27 개발 프로세스 분석 -&gt; 설계 -&gt; 구현(코딩) -&gt; 테스트 -&gt; 유지보수 개발자는 전체를 해야하고 TDD개발 방식이지만 테스트와 구현이 순서가 바뀌는것은 아니다. 기본 순서는 저 순서이다. TDD개방 방식은 분석-설계-구현을 테스트하는 것이다. 단위test를 하는 건 뭘 할지 알 수 있고, 설계를 잘했다는 것이다.">
+<meta property="og:url" content="https://YooGenie.github.io/post/developmentlog/20210305/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://YooGenie.github.io/post/developmentlog/20210305/">
+
+<meta name="twitter:description" content="2021-1-25 사업자번호 테스트케이스 수정 &#43; 정규표현방법, 디버그 이용방법 Go 언어는 string의 기본값은 빈문자이다. 2021-01-26 HTTP 공부, init(), 백엔드에서 API연결체크하는 방법 Authorization부분을 토큰이라고 하는데 하는 이유는 놀이동산에서 표를 산 이후 자유이용권인걸 알리기 위해 도장만 보여주는 개념이다. 2021-01-27 개발 프로세스 분석 -&gt; 설계 -&gt; 구현(코딩) -&gt; 테스트 -&gt; 유지보수 개발자는 전체를 해야하고 TDD개발 방식이지만 테스트와 구현이 순서가 바뀌는것은 아니다. 기본 순서는 저 순서이다. TDD개방 방식은 분석-설계-구현을 테스트하는 것이다. 단위test를 하는 건 뭘 할지 알 수 있고, 설계를 잘했다는 것이다.">
+<meta property="article:published_time" content="2021-03-05T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2021-03-05T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://YooGenie.github.io/img/company.png">
+<meta property="og:image:url" content="https://YooGenie.github.io/img/company.png">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-pink-800 dark:bg-warmgray-900">
+    <div class="container max-w-screen-xl mr-auto ml-auto dark:text-white ">
+        <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6 dark:bg-warmgray-900">
+            <div class="flex items-center flex-no-shrink bg-pink-800 text-black mr-6 dark:text-white">
+                <a href="https://YooGenie.github.io"><span class="font-semibold text-2xl tracking-tight dark:bg-warmgray-900">괴발개발 성장기🐾</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-black dark:text-white" ></i></button>
+                    <span class="text-black dark:text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-black hover:opacity-50 dark:text-white" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        Home
+                    </a>
+                    
+                    <a href="/about"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        About
+                    </a>
+                    
+                </div>
+                <div class="text-black invisible md:visible dark:text-white">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;2021년 1월~3월까지 수습 멘토링 개발일지</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2021/03/05
+              </h4>
+            </section>
+            
+            <div id="tags">
+              <span class="icon-local_offer mr-1"></span>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># 개발자</a>
+              
+             <a href='https://YooGenie.github.io/tags/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C' class="hover:bg-pink-100"># 회사생활</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EC%8B%A0%EC%9E%85%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># 신입개발자</a>
+              
+             <a href='https://YooGenie.github.io/tags/go' class="hover:bg-pink-100"># go</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80' class="hover:bg-pink-100"># 개발일지</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EC%88%98%EC%8A%B5' class="hover:bg-pink-100"># 수습</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80' class="hover:bg-pink-100"># 업무일지</a>
+              
+            </div>
+            
+          </div>
+        </aside>
+        
+        <div style="display: flex; justify-content: center">
+          <img class="py-4" style="width: 400px;" src="https://YooGenie.github.io/img/company.png">
+        </div>
+
+        
+        
+
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5"><h1 id="2021-1-25">2021-1-25</h1>
+<ul>
+<li>사업자번호  테스트케이스 수정 + 정규표현방법, 디버그 이용방법</li>
+<li>Go 언어는  string의 기본값은 빈문자이다.</li>
+</ul>
+<h1 id="2021-01-26">2021-01-26</h1>
+<ul>
+<li>HTTP 공부, init(), 백엔드에서 API연결체크하는 방법</li>
+<li>Authorization부분을 토큰이라고 하는데 하는 이유는 놀이동산에서 표를 산 이후 자유이용권인걸 알리기 위해 도장만 보여주는 개념이다.</li>
+</ul>
+<h1 id="2021-01-27">2021-01-27</h1>
+<ul>
+<li>개발 프로세스
+분석 -&gt; 설계 -&gt; 구현(코딩) -&gt; 테스트 -&gt; 유지보수</li>
+<li>개발자는 전체를 해야하고 TDD개발 방식이지만 테스트와 구현이 순서가 바뀌는것은 아니다. 기본 순서는 저 순서이다. TDD개방 방식은 분석-설계-구현을 테스트하는 것이다.</li>
+<li>단위test를 하는 건 뭘 할지 알 수 있고, 설계를 잘했다는 것이다. 정확히 어디가 틀렸는지 알수 있어서 단위테스트가 필요하다.</li>
+<li>API 연결해서 GET이용해서 response값을 받아오는 방법 구현(내용 정리하기)</li>
+</ul>
+<h1 id="2021-01-28">2021-01-28</h1>
+<ul>
+<li>API 연결해서 POST를 이용해서 response값을 받아오는 방법 구현(내용 정리하기)</li>
+<li>웹 전체 프로세스 정리(controller, DTO,service, repository, Entity)</li>
+<li>git 중요 프로세스</li>
+<li>DB연결 방법</li>
+</ul>
+<h1 id="2021-01-29">2021-01-29</h1>
+<ul>
+<li>전체 프로세스 복습</li>
+</ul>
+<h1 id="2021-02-01">2021-02-01</h1>
+<ul>
+<li>아이디 찾아서 조회하는 것</li>
+<li>목록 전체 조회</li>
+<li>목록 수정</li>
+<li>우리 시스템은 컨트롤-서비스-리포지터 통합테스트이다.</li>
+<li>dot, 팩토리는 단위테스트 가능</li>
+<li>단위기능은 보통 함수</li>
+<li>positive 테스트: 긍정 참인거 참이어야한다. (1개)</li>
+<li>negative 테스트: 부정 에러 찾기 다양하다 ex) name없으면 에러</li>
+<li>목록-&gt; /users</li>
+<li>단권조회 -&gt; /users/ID</li>
+<li>자기 목록만 나오게 하는 것 -&gt; /users/my?</li>
+</ul>
+<h1 id="2021-02-02">2021-02-02</h1>
+<ul>
+<li>승인된 특정ID 조회하는 부분 (실무)</li>
+<li>0이 문제가 되는 점 ( 1) DB에 자동index 1부터 2)0=null go언어에서</li>
+<li>INNER 조인 : A를 기준으로 B가 없으면 안나옴</li>
+<li>OUTER 조인 : A를 기준으로 B가 없으면 나옴</li>
+</ul>
+<h1 id="2021-02-03">2021-02-03</h1>
+<ul>
+<li>자바스크립트 설명</li>
+<li>리액트, SPA 설명</li>
+<li>자바스크립트 pair program으로 리스트 전체 조회</li>
+<li>자바스크립트 메뉴 추가</li>
+</ul>
+<h1 id="2021-02-04">2021-02-04</h1>
+<ul>
+<li>백엔드 삭제기능과 API로 프론트와 백엔드 연결함</li>
+</ul>
+<h1 id="2021-02-05">2021-02-05</h1>
+<ul>
+<li>리액트 props과 state 배움</li>
+<li>리스트 삭제 기능</li>
+<li>중복 등록 방지하기 위해 Loading=false 설정</li>
+<li>상세보기 팝업 뜨기/ 응답값</li>
+</ul>
+<h1 id="2021-02-08">2021-02-08</h1>
+<ul>
+<li>상세보기에서 응답값을 뷰에 보여지기(프론트엔드)</li>
+<li>다른걸 나누는건 결합도 낮고 같은걸 합치는 건 응집도 높다</li>
+<li>1기능 하나의 컴포넌트 하나의 파일</li>
+</ul>
+<h1 id="2021-02-09">2021-02-09</h1>
+<ul>
+<li>특정 아이디로 값을 불러와서 수정하는 과정(프론트엔드)</li>
+<li>map, filter, reduce 글 작성</li>
+</ul>
+<h1 id="2021-02-10">2021-02-10</h1>
+<ul>
+<li>코드 리뷰</li>
+<li>리팩토링(MenuUpdateForm.js: 모달안에 폼을 넣는 구조로 변경)</li>
+</ul>
+<h1 id="2021-02-1518">2021-02-15~18</h1>
+<ul>
+<li>회사 사업에 대하여 이해</li>
+<li>기부쪽 기부완료되고 기부영수증 작성 완료한 사람만 &ldquo;기부영수증상세보기&quot;버튼 나오게 구현</li>
+<li>버튼 클릭하면 기부 영수증 내용을 볼수있게 구현</li>
+<li>map 이용해서 기부내역을 구현</li>
+</ul>
+<h1 id="2021-02-19">2021-02-19</h1>
+<ul>
+<li>테스트코드</li>
+<li>문제가 생길때 값이 잘 나오는지 체크하자</li>
+<li>프론트엔드와 백엔드 작업을 따로 할때 의사소통이 어려웠고 API규약을 정하는데 중요함을 느꼈다.</li>
+<li>API 주소를 /:ID/receipt 이건 이 아이디의 영수증 등록? 수정하는 것!</li>
+</ul>
+<h1 id="2021-02-22">2021-02-22</h1>
+<ul>
+<li>
+<p>물품기부: 사용자가 물품등록, 수정한다. (백엔드부분)</p>
+</li>
+<li>
+<p>사용자가 기부 영수증 내용을 등록,수정한다 (백엔드부분)</p>
+</li>
+<li>
+<p>기부영수증상세보기 코드리뷰후 수정함</p>
+</li>
+<li>
+<p>코드 리뷰할때 어려운 점: 내가 작성한 코드를 쓴 이유를 자신있게 말하기 어려웠다. 코드리뷰할때 상대방이 하라는대로는 하지 않아도 되지만 논리적으로 말하면 된다고 했지만 아직 그렇게 말할 실력이 부족하다. 상대방이 방법을 권유할 때 내가 뭐가 좋은지 구별하지 못했고 가독성이 어느게 좋냐는 질문에 확실하게 말하지 못했다.</p>
+</li>
+</ul>
+<h1 id="2021-02-23">2021-02-23</h1>
+<ul>
+<li>메뉴에서 상세보기 TESTCASE 작성</li>
+<li>기부영수증 수정 DTO에서 JSON 아이디 변경</li>
+<li>알림톡 예시 공부</li>
+<li>알림톡이 service - 비즈 알람톡 연결을 끊고 service - kakao adapter로 연결해야한다.</li>
+</ul>
+<h1 id="2021-02-24">2021-02-24</h1>
+<ul>
+<li>어드민 계정 정보 수정 알림톡</li>
+<li>메뉴판 테스트 코드(단건조회)</li>
+<li>공유회발표</li>
+</ul>
+<h1 id="2021-02-25">2021-02-25</h1>
+<ul>
+<li>메뉴판 테스트 코드(등록, 수정, 전체조회, 삭제)</li>
+<li>수정과 등록을 할때 userClaim := common.GetUserClaim(ctx) 부분에 값이 안들어간다. 그래서 이슈가 생겼다.</li>
+<li>추측은 토큰을 지정하는 과정에서 문제가 생긴거 같다.</li>
+</ul>
+<h1 id="2021-02-26">2021-02-26</h1>
+<ul>
+<li>어드민 계정 정보 등록 알림톡</li>
+<li>영수증 상세보기 간격 수정</li>
+<li>코드리뷰 할 때 고충, 뭔가 사소하게 실수 하는 느낌, 브런치 번호 실수</li>
+</ul>
+<h1 id="2021-03-02">2021-03-02</h1>
+<ul>
+<li>개인 위키 정리</li>
+<li>메뉴 서비스에서 숫자 3자리 , 표시하기 / 한화 표시</li>
+<li>이슈 : 등록폼에서 X 표시누르고 닫았다가 다시 열면 값이 그대로 남아있다.</li>
+</ul>
+<h1 id="2021-03-03">2021-03-03</h1>
+<ul>
+<li>어제 이슈 해결</li>
+<li>V1 코딩 보기</li>
+</ul>
+<h1 id="2021-03-04">2021-03-04</h1>
+<ul>
+<li>props 이해하기</li>
+<li>Table에 페이지가 늘어나면 네모칸(10/page) 이렇게 써있는거 없애기</li>
+</ul>
+<h1 id="2021-03-05">2021-03-05</h1>
+<ul>
+<li>새로운 플랫폼 백엔드부분 다운 받아서 환경변수 설정</li>
+<li>new 플랫폼에서 DB 생성</li>
+<li>API  연결 테스트</li>
+<li>AuthController 부분</li>
+<li>AdministratorController 부분</li>
+<li>PartnerAdminController 부분</li>
+<li>CampaignAdminController 부분</li>
+</ul>
+<hr>
+<h1 id="나의생각2021-12-18">나의생각(2021-12-18)</h1>
+<p>수습 때부터 나는 기부영수증쪽을 했구나.. 멘토링 수업이 참 도움이 많이 되었구나</p>
+<p>​
+​
+​</p>
+</div>
+        
+        <aside id="meta" class="mt-8">
+          
+          <hr class="py-2">
+          <div id="categories">
+            <span class="icon-folder text-xl mr-1"></span>
+            
+            <span
+              class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm duration-200 hover:bg-pink-50 dark:bg-warmgray-800 dark:text-white dark:hover:bg-warmgray-700"><a
+                href='https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C'>회사생활</a></span>
+            
+            <span
+              class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm duration-200 hover:bg-pink-50 dark:bg-warmgray-800 dark:text-white dark:hover:bg-warmgray-700"><a
+                href='https://YooGenie.github.io/categories/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80'>업무일지</a></span>
+            
+          </div>
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4 ">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="https://YooGenie.github.io/post/developmentlog/20210301/">
+              <div
+                class="transition-colors duration-300 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700 ">
+                <span class="icon-keyboard_arrow_left"></span> Go언어로 테스트케이스 작성법
+              </div>
+            </a>
+            
+          </div>
+          
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/developmentlog/20210306/">
+            <div
+              class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
+              수습시절 멘토링 수업하면서 만든 화면 <span class="icon-keyboard_arrow_right"></span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            
+<div class="bg-white mb-3 pb-5 mt-4 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-pink-700 py-5 dark:text-gray-300 font-bold">유지니</p>
+    <div style="align-items:center; display: flex; justify-content:center;">
+    <div style="width: 200px;
+    height: 200px; border-radius: 70%; overflow: hidden;outline-style: solid;outline-color: #d1d5db ">
+        <img class="profile" src=https://user-images.githubusercontent.com/92665524/209554194-59ec211b-3bc5-485b-ae71-8d23441fe816.png  alt="프로필사진"></div>
+    </div>
+    <div class="text-center dark:text-gray-200 dark:hover:bg-warmgray-800 mt-5">
+        <p>Go developer</p>
+        <a href="https://github.com/YooGenie">Github</a>
+        <p style="color: #ffffff">설명 고민중</p>
+    </div>
+</div>
+
+        
+            
+            
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/git"> 🐰&nbsp; Git</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/gitlab"> 🐰&nbsp; Gitlab</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/javascript"> 🐰&nbsp; Javascript</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/macbook-%EC%9E%85%EB%AC%B8%EA%B8%B0"> 🐰&nbsp; Macbook 입문기</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/mysql"> 🐰&nbsp; Mysql</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/react"> 🐰&nbsp; React</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%85%90%EA%B3%B5%EB%B6%80"> 🐰&nbsp; 개념공부</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 개발일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"> 🐰&nbsp; 비동기 프로그래밍</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"> 🐰&nbsp; 사이드프로젝트</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 업무일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4"> 🐰&nbsp; 오픈소스</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0"> 🐰&nbsp; 회고</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C"> 🐰&nbsp; 회사생활</a>
+    
+</div>
+
+
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    
+</div>
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 font-bold dark:text-gray-300 init">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/0%EC%B1%84%EC%9A%B0%EA%B8%B0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 0채우기
+            </span></a>
+        <a href='/tags/1%EB%85%84%EC%B0%A8%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년차회고
+            </span></a>
+        <a href='/tags/1%EB%85%84%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년회고
+            </span></a>
+        <a href='/tags/3%EC%9E%90%EB%A6%AC'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 3자리
+            </span></a>
+        <a href='/tags/adapter'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # adapter
+            </span></a>
+        <a href='/tags/ant-design'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # ant-design
+            </span></a>
+        <a href='/tags/antd'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # antd
+            </span></a>
+        <a href='/tags/api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api
+            </span></a>
+        <a href='/tags/api%EC%A0%95%EC%9D%98'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api정의
+            </span></a>
+        <a href='/tags/app.js'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # app.js
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/retrospective/20230112/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;2022년 개발자 회고</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/01/12</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/sqs/20221115/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/concept/20221118/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/golang/20221109/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] listen tcp :7000: bind: address already in use 에러 메시지 해결방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/09</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/mysql/20221102/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://YooGenie.github.io" />
+    </form>
+</div>
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-pink-800 text-black p-6 dark:bg-warmgray-900 dark:text-white">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2022 <a href="https://YooGenie.github.io" class="duration-200 hover:opacity-50">괴발개발 성장기🐾</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>

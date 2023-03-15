@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+
+<title>괴발개발 성장기🐾 | 혼자하는 Git 공부</title>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="괴발개발 성장기🐾 | 혼자하는 Git 공부" />
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.min.ccbe8916080bfe192671bc902cea039cac0b91f8a9616e3d8d44e6192a79e75f.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="gitlab git을 사용해서 클라우드를 쓰듯이 소스들이 업로드해서 저장하고, 다른 개발자들과 공유, 협업할 수 있는 git 저장소 git으로 원격 전송된 프로젝트들이 저장되는 공간을 제공하는 서비스 git 버전관리를 위한 SW 장점: 버전관리, 협업 명령어 $cd 폴더명 폴더디렉터리 치면 폴더가 지정되고 그 폴더에서 git을 시작하면
+$git init 을 실행한다. 지금부터 이 폴더의 모든 수정내역들이 저장되는 .git(숨은파일)이란 공간이 생긴다.
+git 저장소 만들기 gitTest라는 폴더를 만들어서 $git init 실행하면 &ldquo;빈 git 저장소가 만들었다&quot;라는 메시지가 뜬다. git config --global user.">
+<meta property="og:site_name" content="괴발개발 성장기🐾">
+<meta property="og:description" content="gitlab git을 사용해서 클라우드를 쓰듯이 소스들이 업로드해서 저장하고, 다른 개발자들과 공유, 협업할 수 있는 git 저장소 git으로 원격 전송된 프로젝트들이 저장되는 공간을 제공하는 서비스 git 버전관리를 위한 SW 장점: 버전관리, 협업 명령어 $cd 폴더명 폴더디렉터리 치면 폴더가 지정되고 그 폴더에서 git을 시작하면
+$git init 을 실행한다. 지금부터 이 폴더의 모든 수정내역들이 저장되는 .git(숨은파일)이란 공간이 생긴다.
+git 저장소 만들기 gitTest라는 폴더를 만들어서 $git init 실행하면 &ldquo;빈 git 저장소가 만들었다&quot;라는 메시지가 뜬다. git config --global user.">
+<meta property="og:url" content="https://YooGenie.github.io/post/git/20201221/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://YooGenie.github.io/post/git/20201221/">
+
+<meta name="twitter:description" content="gitlab git을 사용해서 클라우드를 쓰듯이 소스들이 업로드해서 저장하고, 다른 개발자들과 공유, 협업할 수 있는 git 저장소 git으로 원격 전송된 프로젝트들이 저장되는 공간을 제공하는 서비스 git 버전관리를 위한 SW 장점: 버전관리, 협업 명령어 $cd 폴더명 폴더디렉터리 치면 폴더가 지정되고 그 폴더에서 git을 시작하면
+$git init 을 실행한다. 지금부터 이 폴더의 모든 수정내역들이 저장되는 .git(숨은파일)이란 공간이 생긴다.
+git 저장소 만들기 gitTest라는 폴더를 만들어서 $git init 실행하면 &ldquo;빈 git 저장소가 만들었다&quot;라는 메시지가 뜬다. git config --global user.">
+<meta property="article:published_time" content="2020-12-20T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2020-12-20T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="https://YooGenie.github.io/img/git.png">
+<meta property="og:image:url" content="https://YooGenie.github.io/img/git.png">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-pink-800 dark:bg-warmgray-900">
+    <div class="container max-w-screen-xl mr-auto ml-auto dark:text-white ">
+        <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6 dark:bg-warmgray-900">
+            <div class="flex items-center flex-no-shrink bg-pink-800 text-black mr-6 dark:text-white">
+                <a href="https://YooGenie.github.io"><span class="font-semibold text-2xl tracking-tight dark:bg-warmgray-900">괴발개발 성장기🐾</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-black dark:text-white" ></i></button>
+                    <span class="text-black dark:text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-black hover:opacity-50 dark:text-white" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        Home
+                    </a>
+                    
+                    <a href="/about"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-black hover:opacity-50 mr-4 dark:text-white">
+                        About
+                    </a>
+                    
+                </div>
+                <div class="text-black invisible md:visible dark:text-white">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;혼자하는 Git 공부</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2020/12/20
+              </h4>
+            </section>
+            
+            <div id="tags">
+              <span class="icon-local_offer mr-1"></span>
+              
+             <a href='https://YooGenie.github.io/tags/git' class="hover:bg-pink-100"># git</a>
+              
+             <a href='https://YooGenie.github.io/tags/git-checkout' class="hover:bg-pink-100"># git checkout</a>
+              
+             <a href='https://YooGenie.github.io/tags/commit' class="hover:bg-pink-100"># commit</a>
+              
+             <a href='https://YooGenie.github.io/tags/revert' class="hover:bg-pink-100"># REVERT</a>
+              
+             <a href='https://YooGenie.github.io/tags/reset' class="hover:bg-pink-100"># RESET</a>
+              
+             <a href='https://YooGenie.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90' class="hover:bg-pink-100"># 개발자</a>
+              
+             <a href='https://YooGenie.github.io/tags/git%EC%A0%80%EC%9E%A5%EC%86%8C' class="hover:bg-pink-100"># git저장소</a>
+              
+             <a href='https://YooGenie.github.io/tags/gitlab' class="hover:bg-pink-100"># gitLab</a>
+              
+            </div>
+            
+          </div>
+        </aside>
+        
+        <div style="display: flex; justify-content: center">
+          <img class="py-4" style="width: 400px;" src="https://YooGenie.github.io/img/git.png">
+        </div>
+
+        
+        
+
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5"><h1 id="gitlab">gitlab</h1>
+<ul>
+<li>git을 사용해서 클라우드를 쓰듯이 소스들이 업로드해서 저장하고, 다른 개발자들과 공유, 협업할 수 있는 git 저장소</li>
+<li>git으로 원격 전송된 프로젝트들이 저장되는 공간을 제공하는 서비스</li>
+</ul>
+<h1 id="git">git</h1>
+<ul>
+<li>버전관리를 위한 SW</li>
+<li>장점: 버전관리, 협업</li>
+</ul>
+<h1 id="명령어">명령어</h1>
+<pre tabindex="0"><code>$cd 폴더명
+</code></pre><p>폴더디렉터리 치면 폴더가 지정되고 그 폴더에서 git을 시작하면</p>
+<pre tabindex="0"><code>$git init
+</code></pre><p>을 실행한다.
+지금부터 이 폴더의 모든 수정내역들이 저장되는 .git(숨은파일)이란 공간이 생긴다.</p>
+<hr>
+<ol>
+<li>git 저장소 만들기
+gitTest라는 폴더를 만들어서 $git init 실행하면 &ldquo;빈 git 저장소가 만들었다&quot;라는 메시지가 뜬다.</li>
+</ol>
+<pre tabindex="0"><code>git config --global user.name &#34;이름명&#34;
+
+git config --global user.email &#34;이메일주소&#34;
+</code></pre><hr>
+<ol start="2">
+<li>현재시점을 저장하기</li>
+</ol>
+<pre tabindex="0"><code>git status //현재 상태 체크
+git add -A //git의 타임캡슐에 모든 걸 넣는다.
+git commit -m &#34;메시지&#34; //저장한다(타임캡슐이 묻혔다)
+</code></pre><p>새파일(firstTest)을 만든 후 git status 실행하면 firstTest가 빨강 글씨로 뜬다. 그리고 커밋하면 새캡술에 묻힌다.</p>
+<p>Add firstTest를 불러오면 처음에 저장해 놓은 것과 함께 나온다.</p>
+<hr>
+<p>3-1 과거로 돌아가기 - RESET</p>
+<ul>
+<li>hard를 설정한 경우: 돌아간 이후는 완전히 삭제된다. (1-2-3에서 2로 돌아가면 3은 완전히 지워진다.)</li>
+<li>soft를 설정한 경우: 돌아가지만 이후 내용들은 삭제되지 않는다.</li>
+<li>git log해서 2번째에 commit 38999b~(6자리만복사)</li>
+<li>git reset &ndash;hard 38999b //두번째 파일로 돌아간다.(그 이후는 완전 삭제)</li>
+</ul>
+<hr>
+<p>3.2 과거로 돌아가기 - REVERT (취소할 시점으로)</p>
+<ul>
+<li>git log해서 1번을 선택한다 ==&gt; git revert 68foc5 실행 =&gt; 1-2-3-1 되는 것이다.</li>
+</ul>
+<p>새 커밋메시지를 작성하는 화면이 뜬다. =&gt;그대로 저장하겠다는 vi명령어 :wq입력한다.</p>
+<hr>
+<ol start="4">
+<li>브랜치</li>
+</ol>
+<pre tabindex="0"><code>1---2---3---4
+ ---2.1---5---6
+    ---2.1.1---8---9
+</code></pre><ul>
+<li>주 브랜치: master</li>
+</ul>
+<pre tabindex="0"><code>git branch myIdea //나의 브랜치 설치
+
+git checkout myIdea //나의 브랜치로 가는 방법
+</code></pre><p>myIdea 상태에서</p>
+<pre tabindex="0"><code>git branch my2
+</code></pre><p>입력 =&gt; 생성</p>
+<pre tabindex="0"><code>git checkout master //원래 브랜치로 가는 방법
+</code></pre><hr>
+<p>5-1 Merge</p>
+<ul>
+<li>my2에서 master로 가져오는 것</li>
+</ul>
+<pre tabindex="0"><code>git checkout master
+git merge my2 //my2에서 master로 merge된다.
+</code></pre><hr>
+<p>5-2 REBASE</p>
+<ul>
+<li>분기들이 한줄로 깔끔하게 합쳐져 있음 (1&ndash;2&ndash;3&ndash;4&ndash;2.1&ndash;5&ndash;6&ndash;2.1.1&ndash;8&ndash;9)</li>
+</ul>
+<pre tabindex="0"><code>git rebase my2
+git branch -D my2 //브랜치 삭제
+</code></pre><h1 id="참고">참고</h1>
+<p>유튜브 &ldquo;얄팍한 코딩사전&rdquo; 참고</p>
+<p>​
+​
+​</p>
+</div>
+        
+        <aside id="meta" class="mt-8">
+          
+          <hr class="py-2">
+          <div id="categories">
+            <span class="icon-folder text-xl mr-1"></span>
+            
+            <span
+              class="inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm duration-200 hover:bg-pink-50 dark:bg-warmgray-800 dark:text-white dark:hover:bg-warmgray-700"><a
+                href='https://YooGenie.github.io/categories/git'>git</a></span>
+            
+          </div>
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4 ">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="https://YooGenie.github.io/post/developmentlog/20201215/">
+              <div
+                class="transition-colors duration-300 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700 ">
+                <span class="icon-keyboard_arrow_left"></span> go 시작하는법
+              </div>
+            </a>
+            
+          </div>
+          
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/company/20201221/">
+            <div
+              class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
+              #1 초기 로컬 개발 환경 구성 <span class="icon-keyboard_arrow_right"></span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            
+<div class="bg-white mb-3 pb-5 mt-4 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-pink-700 py-5 dark:text-gray-300 font-bold">유지니</p>
+    <div style="align-items:center; display: flex; justify-content:center;">
+    <div style="width: 200px;
+    height: 200px; border-radius: 70%; overflow: hidden;outline-style: solid;outline-color: #d1d5db ">
+        <img class="profile" src=https://user-images.githubusercontent.com/92665524/209554194-59ec211b-3bc5-485b-ae71-8d23441fe816.png  alt="프로필사진"></div>
+    </div>
+    <div class="text-center dark:text-gray-200 dark:hover:bg-warmgray-800 mt-5">
+        <p>Go developer</p>
+        <a href="https://github.com/YooGenie">Github</a>
+        <p style="color: #ffffff">설명 고민중</p>
+    </div>
+</div>
+
+        
+            
+            
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/git"> 🐰&nbsp; Git</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/gitlab"> 🐰&nbsp; Gitlab</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/golang"> 🐰&nbsp; Golang</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/javascript"> 🐰&nbsp; Javascript</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/macbook-%EC%9E%85%EB%AC%B8%EA%B8%B0"> 🐰&nbsp; Macbook 입문기</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/mysql"> 🐰&nbsp; Mysql</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/react"> 🐰&nbsp; React</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%85%90%EA%B3%B5%EB%B6%80"> 🐰&nbsp; 개념공부</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 개발일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"> 🐰&nbsp; 비동기 프로그래밍</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8"> 🐰&nbsp; 사이드프로젝트</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80"> 🐰&nbsp; 업무일지</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4"> 🐰&nbsp; 오픈소스</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EA%B3%A0"> 🐰&nbsp; 회고</a>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/%ED%9A%8C%EC%82%AC%EC%83%9D%ED%99%9C"> 🐰&nbsp; 회사생활</a>
+    
+</div>
+
+
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    
+</div>
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 font-bold dark:text-gray-300 init">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/0%EC%B1%84%EC%9A%B0%EA%B8%B0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 0채우기
+            </span></a>
+        <a href='/tags/1%EB%85%84%EC%B0%A8%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년차회고
+            </span></a>
+        <a href='/tags/1%EB%85%84%ED%9A%8C%EA%B3%A0'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 1년회고
+            </span></a>
+        <a href='/tags/3%EC%9E%90%EB%A6%AC'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # 3자리
+            </span></a>
+        <a href='/tags/adapter'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # adapter
+            </span></a>
+        <a href='/tags/ant-design'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # ant-design
+            </span></a>
+        <a href='/tags/antd'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # antd
+            </span></a>
+        <a href='/tags/api'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api
+            </span></a>
+        <a href='/tags/api%EC%A0%95%EC%9D%98'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # api정의
+            </span></a>
+        <a href='/tags/app.js'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-black text-sm hover:bg-pink-50 dark:bg-warmgray-800 dark:hover:bg-warmgray-700 dark:text-white">
+                # app.js
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/retrospective/20230112/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;2022년 개발자 회고</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/01/12</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/sqs/20221115/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/concept/20221118/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/golang/20221109/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[golang] listen tcp :7000: bind: address already in use 에러 메시지 해결방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/09</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/mysql/20221102/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[MySQL] 컬럼 추가 및 컬럼 순서 지정하기</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://YooGenie.github.io" />
+    </form>
+</div>
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-pink-800 text-black p-6 dark:bg-warmgray-900 dark:text-white">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2022 <a href="https://YooGenie.github.io" class="duration-200 hover:opacity-50">괴발개발 성장기🐾</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>
