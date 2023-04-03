@@ -13,7 +13,7 @@
   gtag('config', 'G-71D64YSLV2');
 </script>
 
-<title>괴발개발 성장기🐾 | [Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</title>
+<title>괴발개발 성장기🐾 | [Amazon SQS] SQS에 메시지를 넣는다.</title>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="jeGEYl8pUmGQB2dbWu-MfewktQ4uUO305hZJ7l67m4s" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -25,7 +25,7 @@
     <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
     <link rel="shortcut icon" href='/favicon/favicon.ico' />
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="괴발개발 성장기🐾 | [Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다" />
+    <meta property="og:title" content="괴발개발 성장기🐾 | [Amazon SQS] SQS에 메시지를 넣는다." />
     
     
     
@@ -135,7 +135,7 @@ func SendMessage(sess *session.Session, queueURL *string) error { svc := sqs.New
   <div class="col-span-3 lg:col-span-2 dark:text-white">
     
       <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
-        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</h1>
+        <h1 class="mb-2 text-4xl font-bold"> 🐾&nbsp; &nbsp;[Amazon SQS] SQS에 메시지를 넣는다.</h1>
         <aside id="meta">
           <div>
             <section>
@@ -247,10 +247,10 @@ return nil
             
           </div>
           
-          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/retrospective/20230112/">
+          <a class="next lg:text-2xl" href="https://YooGenie.github.io/post/sqs/20230402/">
             <div
               class="transition-colors duration-300 col-span-1 border border-gray-200 hover:bg-pink-50 h-auto m-3 text-center py-3 lg:py-1 dark:text-white dark:hover:bg-warmgray-700">
-              2022년 개발자 회고 <span class="icon-keyboard_arrow_right"></span>
+              [Amazon SQS] Amazon SQS 안에 있는 메시지를 받는 방법 <span class="icon-keyboard_arrow_right"></span>
             </div>
           </a>
           
@@ -287,6 +287,9 @@ return nil
             
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/docker"> 🐰&nbsp; Docker</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
@@ -417,6 +420,17 @@ return nil
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
+        <a href="/post/docker/20230401/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;도커 설치 및 시작방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/04/01</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/etc/20230320/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -450,24 +464,13 @@ return nil
                 </div>
             </div>
         </a>
-        <a href="/post/sqs/20221115/" class="">
+        <a href="/post/sqs/20230402/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SQS] Amazon SQS 안에 있는 메시지를 받는 방법</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/concept/20221118/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
                     </p>
                 </div>
             </div>

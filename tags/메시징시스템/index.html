@@ -133,6 +133,28 @@
     
     
     
+    <a href="/post/sqs/20230402/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src="/img/async.png" />
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[Amazon SQS] Amazon SQS 안에 있는 메시지를 받는 방법</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">배경 큐안에 있는 메시지를 뽑아 와야했다.
+코드 아래 코드를 무한 루프를 돌립니다.
+msgResult, err := service.GetMessages(sess, queueURL.QueueUrl, timeout) if err != n...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
     <a href="/post/sqs/20221115/">
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
@@ -144,7 +166,7 @@
     
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[Amazon SQS] SQS에 메시지를 넣는다.</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">배경 이메일 아니라 큐에 메시지를 보내야 했다.
 FIFO 방식이 아닌 표준방식 SNS만들고 SQS 연결했다. 이 때 메시지가 잘 보내졌다. SNS에서 FIFO방식으로 만들고 FIFO방식의 SQS도 만들어서 연결 시켰다. 그리고 메시지...</p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
@@ -183,6 +205,9 @@ FIFO 방식이 아닌 표준방식 SNS만들고 SQS 연결했다. 이 때 메시
             
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/docker"> 🐰&nbsp; Docker</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
@@ -313,6 +338,17 @@ FIFO 방식이 아닌 표준방식 SNS만들고 SQS 연결했다. 이 때 메시
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
+        <a href="/post/docker/20230401/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;도커 설치 및 시작방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/04/01</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/etc/20230320/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -346,24 +382,13 @@ FIFO 방식이 아닌 표준방식 SNS만들고 SQS 연결했다. 이 때 메시
                 </div>
             </div>
         </a>
-        <a href="/post/sqs/20221115/" class="">
+        <a href="/post/sqs/20230402/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SQS] Amazon SQS 안에 있는 메시지를 받는 방법</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/concept/20221118/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
                     </p>
                 </div>
             </div>

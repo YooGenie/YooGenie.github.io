@@ -133,6 +133,26 @@
     
     
     
+    <a href="/post/sqs/20221019/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    <img alt="thumbnail" id="thumb"
+        class="lg:w-auto lg:h-44"
+        src="/img/async.png" />
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[Amazon SNS] AWS에서 topic를 생성한다 - 이메일용</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">aws 홈페이지 접속해서 로그인을 한다. 상단 검색창에 SNS 쓰면 서비스에 “Simple Notification Service&#34;를 클릭한다. 왼쪽 바에 “주제&#34;를 클릭한다 오른쪽 상단에 &amp;ld...</p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2022/10/14</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
     <a href="/post/golang/20221014/">
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
@@ -319,28 +339,6 @@ Context 애플리케이션 전체 =&gt; 코드 전체 request에서 ...</p>
 </div>
     </a>
     
-    <a href="/post/golang/20221006/">
-      <div
-    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
-    
-    
-    <img alt="thumbnail" id="thumb"
-        class="lg:w-auto lg:h-44"
-        src="/img/gogo.PNG" />
-    
-    
-    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
-        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">🐾&nbsp; &nbsp;[Golang] 채널(channel)에서 주의할 점</div>
-        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">이전꺼 글 넣기 2022.10.05 - [Study/Go 언어] - [golang] 채널(channel) 기본 문법
-주의할 점 1) 채널이 꽉 찼을 경우 예를 들어보자
-ch := make(chan int, 3) ch &lt;- 1 c...</p>
-        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
-            <time><span class="icon-access_time mr-1"></span>2022/10/05</time>
-        </p>
-    </div>
-</div>
-    </a>
-    
     
 
 <nav aria-label="page navigation">
@@ -426,6 +424,9 @@ ch := make(chan int, 3) ch &lt;- 1 c...</p>
             
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">카데고리</p>
+    
+    <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
+        href="https://YooGenie.github.io/categories/docker"> 🐰&nbsp; Docker</a>
     
     <a class="block duration-100 py-2 px-4 mx-4 hover:bg-pink-50 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-700"
         href="https://YooGenie.github.io/categories/error"> 🐰&nbsp; Error</a>
@@ -556,6 +557,17 @@ ch := make(chan int, 3) ch &lt;- 1 c...</p>
 <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
     <div class="mx-6">
+        <a href="/post/docker/20230401/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;도커 설치 및 시작방법</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/04/01</time>
+                    </p>
+                </div>
+            </div>
+        </a>
         <a href="/post/etc/20230320/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
@@ -589,24 +601,13 @@ ch := make(chan int, 3) ch &lt;- 1 c...</p>
                 </div>
             </div>
         </a>
-        <a href="/post/sqs/20221115/" class="">
+        <a href="/post/sqs/20230402/" class="">
             <div
                 class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
                 <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SNS] SNS 토픽을 구독한 메일로 메시지를 보낸다</div>
+                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[Amazon SQS] Amazon SQS 안에 있는 메시지를 받는 방법</div>
                     <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
                         <time><span class="icon-access_time mr-1"></span>2022/11/25</time>
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/post/concept/20221118/" class="">
-            <div
-                class="w-full block mt-3 bg-white hover:bg-pink-50 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-700">
-                <div class="px-2">
-                    <div class="text-gray-900 font-bold text-base dark:text-white">🐾&nbsp;&nbsp;[개념정리] API</div>
-                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
-                        <time><span class="icon-access_time mr-1"></span>2022/11/18</time>
                     </p>
                 </div>
             </div>
